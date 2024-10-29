@@ -1,0 +1,236 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+img {
+	border: none;
+}
+
+a {
+	border: none;
+	text-decoration: none;
+	color: #000;
+}
+
+.border {
+	border: 1px solid #e1251b;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.w {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.float {
+	float: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.fr {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.ml20 {
+	margin-left: 20px;
+}
+
+.ml40 {
+	margin-left: 40px;
+}
+
+.mr40 {
+	margin-right: 40px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.ft20 {
+	font-size: 20px;
+}
+
+
+.pr {
+	padding-right: 40px;
+}
+
+.h3 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/*xiangqing*/
+.xiangqing {
+	width: 100%;
+	height: 40px;
+	background: #f8f9fa;
+}
+
+.xiangqing .neirong {
+	height: 40px;
+	padding: 0 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.xiangqing .neirong .xiaomi6 {
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 12px;
+}
+
+.xiangqing .neirong nav {
+	display: inline-block;
+	width: 410px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.xiangqing .neirong nav li {
+	float: right;
+	display: block;
+	margin-right: 5px;
+}
+
+.xiangqing .neirong nav li a {
+	color: rgb(95, 95, 95);
+}
+
+.xiangqing .neirong nav li a:hover {
+	color: #e1251b;
+}
+
+/*jieshao*/
+.jieshao {
+	height: 460px;
+}
+
+.jieshao .left {
+	width: 570px;
+	height: 460px;
+	padding: 10px;
+	background-color: #f8f9fa;
+}
+
+.jieshao .right {
+	width: 570px;
+	background-color: #f8f9fa;
+	height: 460px;
+
+}
+
+.jieshao .right .jianjie {
+	font-size: 16px;
+	font-weight: bold;
+	color: rgb(95, 95, 95);
+	line-height: 25px;
+}
+
+.jieshao .right .jiage {
+	font-size: 16px;
+	color: #e1251b;
+}
+
+.jieshao .right .xzbb {
+	height: 35px;
+	line-height: 35px;
+}
+
+.xzbb div {
+	height: 43.5px;
+	line-height: 43.5px;
+
+}
+
+.fenlei {
+	width: 200px;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	background-color: white;
+	border: 1px solid rgb(227, 227, 227);
+}
+
+
+.version-frame {
+	height: 42px;
+	line-height: 42px;
+	border: 2px solid #e1251b;
+
+}
+
+.color-frame {
+	height: 42px;
+	line-height: 42px;
+	border: 2px solid #e1251b;
+}
+
+
+
+.shuliang button {
+	background-color: white;
+	border: 1px solid rgb(227, 227, 227);
+	width: 15px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*选取详情*/
+.xqxq {
+	height: 80px;
+	width: 555px;
+	background: rgb(255, 255, 255);
+	padding: 20px;
+}
+
+/*是否下单*/
+.xiadan {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+.xiadan .jrgwc {
+	height: 30px;
+	width: 130px;
+	border: none;
+	background: #e1251b;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	margin-right: 50px;
+}
+
+.xiadan .jrgwc:hover {
+	border: 1px solid #fff;
+}

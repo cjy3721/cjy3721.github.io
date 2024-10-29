@@ -1,0 +1,192 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2024-10-05 10:52:43
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2024-10-10 00:25:29
+ * @FilePath: \臻品购物城\forget.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="shortcut icon" href="./image/logo/logo2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/login.css">
+    <title>臻品购物城注册</title>
+</head>
+
+<body>
+
+
+    <div class="flex">
+        <a href="./index.html"><img class="img_loginback" src="./image/logo/logo.png" alt=""></a>
+        <div><i>100%正品</i>
+            <i>7天放心退</i>
+            <i>9.9包邮</i>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <div class="flex">
+            <div class="login_f">
+                <div class="soild">
+                    <div>重置密码</div>
+                    <div>已想起密码？返回<a href="./login.html">登录</a></div>
+                </div>
+                <div class="zhong">
+                    <input type="text" id="registrationPhone" class="login-register-input" style="margin-bottom: 1vh;"
+                        placeholder="请输入原账户手机号码">
+                    <input type="password" id="password" class="login-register-input" style="margin-bottom: 1vh;"
+                        placeholder="请输入新密码">
+                    <input type="password" id="confirmPassword" class="login-register-input" style="margin-bottom: 1vh;"
+                        placeholder="请再次输入密码">
+                    <div
+                        style="flex: 1;display: flex;justify-content: space-between;align-items: center; width: 17vw;margin-bottom: 1vh;">
+                        <input type="text" id="verification" class="login-register-input" style="width: 50%;"
+                            placeholder="请输入验证码">
+                        <span id="verificationCodeDisplay" style=" width: 40%;font-size: 12px;cursor: pointer;"
+                            onclick="generateVerificationCode()">获取验证码</span>
+                    </div>
+                </div>
+
+                <button class="dianji-denglu_f" onclick="validateRegistration()">重置</button>
+            </div>
+        </div>
+    </div>
+    <!-- 脚注 -->
+    <footer id="footer" class="footer">
+        <div class="footer_width">
+            <ol class="fl2 foot1">
+                <li>
+                    <i class="iconfont icon-icon"></i>
+                    <span>正品保障</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-youxuan-quanqiuzhicai"></i>
+                    <span>全球直采</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-service-wuyoutuihuanhuo"></i>
+                    <span>无忧退换</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-baohu"></i>
+                    <span>值得信赖</span>
+                </li>
+            </ol>
+            <div style="border-top: 1px solid #ebebeb;margin-bottom: 15px;"></div>
+            <div class="fl">
+                <dl class="foot2">
+                    <dt>服务保障</dt>
+                    <dd>1.正品保证</dd>
+                    <dd>2.7天无理由放心退</dd>
+                    <dd>3.24小时客户在线服务</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>支付方式</dt>
+                    <dd>1.支付宝支付</dd>
+                    <dd>2.微信支付</dd>
+                    <dd>3.qq支付</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>配送方式</dt>
+                    <dd>1.配送范围:仅中国内陆</dd>
+                    <dd>2.运费：全场包邮</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>售后服务</dt>
+                    <dd>1.退货政策：七天无理由退货（仅部分商品包邮，其它由客户自行承担）</dd>
+                    <dd>2.退货方式：联系客服后回寄商品&nbsp;&nbsp;&nbsp;退款方式：原支付方式退回</dd>
+                    <dd>3.时效：回寄商品后货到退款</dd>
+                </dl>
+            </div>
+            <p class="foot3">
+                <a href="">关于我们</a>&nbsp;|
+                <a href="">品牌招商</a>&nbsp;|
+                <a href="">平台规则</a>&nbsp;|
+                <a href="">隐私条款</a>&nbsp;|
+                <a href="">服务条款</a>
+            <p>
+
+            <p style="padding-top: 10px;">
+                <span>QQ: 3491025882</span>
+                <span>邮箱: 3491025882@qq.com</span>
+                <span>全国服务热线：400-643-2548</span>
+                <br>
+                使用本网站即表示接受用户协议版权所有臻品有限公司粤公网安备 440103023331号
+                &nbsp;&nbsp;粤ICP备08114786号经营许可证：粤B2-20170777
+                违法和不良信息举报电话：4006789888&nbsp;算法推荐违规举报电话：4006789888
+            </p>
+            <div style="float: left;">
+                <a href="https://www.12315.cn/?spm=608.20767294.a2226n1.89.26221aa3XjCKMv"><img
+                        src="./image/foot_img/1.png" alt="" style="height: 40px;width: auto;"></a>
+                <a href="https://jbts.mct.gov.cn/?spm=608.20767294.a2226n1.88.26221aa3XjCKMv"><img
+                        src="./image/foot_img/2.png" alt="" style="height: 40px;width: auto;"></a>
+                <a href="https://www.zjjubao.com/?spm=608.20767294.a2226n1.90.26221aa3XjCKMv"><img
+                        src="./image/foot_img/3.png" alt="" style="height: 40px;width: auto;"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    let verificationCode;
+
+    function generateVerificationCode() {
+        // 生成一个随机的 4 位数字验证码
+        verificationCode = Math.floor(1000 + Math.random() * 9000);
+
+        // 设置随机干扰背景图片
+        const backgroundImages = [
+            './image/验证码/1.png',
+            './image/验证码/2.png',
+            './image/验证码/3.png'
+        ];
+        const randomImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
+        document.getElementById('verificationCodeDisplay').style.backgroundImage = `url(${randomImage})`;
+        // 设置数字大小
+        document.getElementById('verificationCodeDisplay').style.fontSize = '16px';
+        document.getElementById('verificationCodeDisplay').innerText = verificationCode;
+    }
+
+    function validateRegistration() {
+        const phoneInput = document.getElementById('registrationPhone').value;
+        const passwordInput = document.getElementById('password').value;
+        const confirmPasswordInput = document.getElementById('confirmPassword').value;
+        const verificationInput = document.getElementById('verification').value;
+
+        // 手机号码验证
+        if (phoneInput.length !== 11) {
+            alert('请输入正确的手机号');
+            return false;
+        }
+        // 是否输入密码
+        if (passwordInput == 0) {
+            alert('请输入新密码');
+            return false;
+        }
+        // 密码一致性验证
+        if (passwordInput !== confirmPasswordInput) {
+            alert('两次输入的密码不一致');
+            return false;
+        }
+
+        // 验证码验证
+        if (verificationInput !== verificationCode.toString()) {
+            alert('验证码错误');
+            return false;
+        }
+
+
+
+        alert('重置成功，即将返回登录页面');
+        window.location.href = './login.html';
+        return true;
+    }
+</script>
+
+</html>

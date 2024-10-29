@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/gerenzhongxin.css">
+    <link rel="stylesheet" href="./css/dingdan_xq.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="shortcut icon" href="./image/logo/logo2.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div style="background-color:#f8f9fa;height: 30px;">
+        <div class="container fl head">
+            <div class="head1">欢迎来到臻品购物城！
+                <script>
+                    var arrWeekDay = new Array("星期日", "星期一", "星期二", "星期三", "星期四",
+                        "星期五", "星期六", "星期日");
+                    var today;
+                    today = new Date();
+                    document.write("现在是北京时间：" + today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 " + arrWeekDay[today.getDay()]);
+                </script>
+            </div>
+
+            <div>
+                <ol class="fl head2">
+                    <li style="margin-right:10px;">
+                        <a href="./fankui.html" id="loginLink">
+                            <i class="iconfont icon-fankui"></i>
+                            <span class="text">意见反馈</span>
+                        </a>
+                    </li>
+                    <li style="margin-right:10px;">
+                        <a href="./index.html">
+                            <i class="iconfont icon-denglu"></i>
+                            <span class="text">退出登录</span>
+                        </a>
+                    </li>
+                    <li style="margin-right:10px;">
+                        <a href="./gerenzhongxin.html">
+                            <i class="iconfont icon-zhuce"></i>
+                            <span class="text">个人中心</span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: white;">
+        <div class="fl2 part1 ">
+            <div>
+                <a href="./index2.html"><img src="./image/logo/logo.png" alt=""
+                        style="width: 300px;height: 90px;overflow: hidden;"></a>
+            </div>
+            <div>
+                <div class="search">
+                    <input type="text" name="" value="" class="t_name">
+                    <button class="ok">确定</button>
+                </div>
+                <ol style="display: flex;justify-content: left;">
+                    <li class="tag">超值优惠</li>
+                    <li class="tag">联想笔记本</li>
+                    <li class="tag">华为手机</li>
+                    <li class="tag">玛丽珍皮鞋</li>
+                    <li class="tag">男士体恤</li>
+                </ol>
+            </div>
+            <div class="shopCar"> <a href="./index2.html#car">
+                    <i class="iconfont  icon-gouwuche"></i>
+                    <span>我的购物车 </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 个人中心 -->
+    <div class="grzx">
+
+        <div class="sidebar">
+            <div class="grzxbt">个人中心</div>
+            <ul>
+                <li onclick="showContent('myData')"><a href="#">我的资料</a></li>
+                <li onclick="showContent('address')"><a href="#">收货信息</a></li>
+                <li onclick="showContent('order')"><a href="#">我的订单</a></li>
+
+                <li onclick="showContent('coupon')"><a href="#">优惠券</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div id="myData" class="content-section">
+                <div class="contentbt">我的资料</div>
+                <div style="display: flex;width: 60%;justify-content: space-between;padding-top: 20px;">
+                    <div class="profile-section">
+                        <img src="./image/sptuijian/唐狮T恤.png" alt="头像">
+                    </div>
+                    <div class="my-data ">
+                        <label for="nickname">昵称</label>
+                        <input type="text" id="nickname" value="自由如风">
+                        <label for="phone">绑定手机号</label>
+                        <input type="text" id="phone" value="13648162129">
+                        <label for="password">密码</label>
+                        <input type="text" id="password" value="123456">
+                        <label for="youxiang">邮箱</label>
+                        <input type="text" id="youxiang" value="3491025882@.qq.com">
+                    </div>
+                </div>
+            </div>
+
+            <div id="notification" class="content-section notification">
+                <p>暂无消息</p>
+            </div>
+
+            <div id="coupon" class="content-section coupon">
+                <div class="contentbt">优惠券</div>
+                <div style="height: 20px;"></div>
+                <table>
+                    <tr>
+                        <th>优惠券名称</th>
+                        <th>面额</th>
+                        <th>有效期</th>
+                        <th>数量</th>
+                    </tr>
+                    <tr>
+                        <td>满300减50券</td>
+                        <td>￥50</td>
+                        <td>2024/09/30</td>
+                        <td>1 张</td>
+                    </tr>
+                    <tr>
+                        <td>联想折扣券</td>
+                        <td>8 折</td>
+                        <td>2024/09/20</td>
+                        <td>2 张</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="address" class="content-section">
+                <div class="contentbt">收货信息</div>
+                <div class="address-section">
+                    <label for="receiverName">收货人姓名</label>
+                    <input type="text" id="receiverName" value="自由如风">
+                    <label for="receiverPhone">收货人手机号</label>
+                    <input type="text" id="receiverPhone" value="13648162129">
+                    <label for="addressDetail">收货地址</label>
+                    <input type="text" id="addressDetail" value="浙江省 宁波市 北仑区江苏省 苏州市沧浪区东街花苑4栋302">
+                </div>
+            </div>
+            <style>
+                .contentbt a {
+                    color: black;
+                }
+
+                .contentbt a:hover {
+                    color: #e1251b;
+                }
+            </style>
+            <div id="order" class="content-section">
+                <div class="contentbt">交易订单<span style="float: right;margin-right: 20px;font-size: 14px;"><a
+                            href="./gerenzhongxin.html">返回></a></span>
+                </div>
+                <div
+                    style="display: flex;justify-content: space-between;justify-items: center;width: 85%;margin: 0 auto;padding-top: 20px;">
+                    <!--主体内容-->
+                    <div class="main">
+                        <!--用户信息-->
+                        <div class="pannel user_msg">
+                            <div class="location">
+                                <i class="iconfont icon-location">自</i>
+                            </div>
+                            <div class="user">
+                                <div class="top">
+                                    <h6>自由如风</h6>
+                                    <p>13648162129</p>
+                                </div>
+                                <div class="bottom">浙江省 宁波市 北仑区江苏省 苏州市沧浪区东街花苑4栋302</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--商品信息-->
+                    <div class="pannel goods">
+                        <div class="pic">
+                            <a href="./JBL_xq.html"><img src="./image/JBL_xq/1.jpg" alt="" width="60px"> </a>
+                        </div>
+                        <div class="info">
+                            <h5>JBL T310C入耳式有线耳机男女耳麦重低音耳机</h5>
+                            <p><span>普通版</span>
+                                <span>黑色</span>
+                                <span>数量:1</span>
+
+                            </p>
+                            <div class="price">
+                                <span class="red">￥<i>129</i></span>
+                                <span>￥200</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--配送方式-->
+                <section class="pannel rest">
+                    <div>
+                        <h5>配送方式</h5>
+                        <p>顺丰快递</p>
+                    </div>
+                    <div>
+                        <h5>买家备注</h5>
+                        <p>希望卖家可以快点发货~谢谢！！</p>
+                    </div>
+                    <div>
+                        <h5>支付方式</h5>
+                        <p>支付宝</p>
+                    </div>
+                    <div>
+                        <h5>商品总价</h5>
+                        <p>￥129.00</p>
+                    </div>
+                    <div>
+                        <h5>运费</h5>
+                        <p>￥0.00</p>
+                    </div>
+                    <div>
+                        <h5>实际支付</h5>
+                        <p>￥129.00</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 脚注 -->
+    <footer id="footer" class="footer">
+        <div class="footer_width">
+            <ol class="fl2 foot1">
+                <li>
+                    <i class="iconfont icon-icon"></i>
+                    <span>正品保障</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-youxuan-quanqiuzhicai"></i>
+                    <span>全球直采</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-service-wuyoutuihuanhuo"></i>
+                    <span>无忧退换</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-baohu"></i>
+                    <span>值得信赖</span>
+                </li>
+            </ol>
+            <div style="border-top: 1px solid #ebebeb;margin-bottom: 15px;"></div>
+            <div class="fl">
+                <dl class="foot2">
+                    <dt>服务保障</dt>
+                    <dd>1.正品保证</dd>
+                    <dd>2.7天无理由放心退</dd>
+                    <dd>3.24小时客户在线服务</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>支付方式</dt>
+                    <dd>1.支付宝支付</dd>
+                    <dd>2.微信支付</dd>
+                    <dd>3.qq支付</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>配送方式</dt>
+                    <dd>1.配送范围:仅中国内陆</dd>
+                    <dd>2.运费：全场包邮</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>售后服务</dt>
+                    <dd>1.退货政策：七天无理由退货（仅部分商品包邮，其它由客户自行承担）</dd>
+                    <dd>2.退货方式：联系客服后回寄商品&nbsp;&nbsp;&nbsp;退款方式：原支付方式退回</dd>
+                    <dd>3.时效：回寄商品后货到退款</dd>
+                </dl>
+            </div>
+            <p class="foot3">
+                <a href="">关于我们</a>&nbsp;|
+                <a href="">品牌招商</a>&nbsp;|
+                <a href="">平台规则</a>&nbsp;|
+                <a href="">隐私条款</a>&nbsp;|
+                <a href="">服务条款</a>
+            <p>
+
+            <p style="padding-top: 10px;">
+                <span>QQ: 3491025882</span>
+                <span>邮箱: 3491025882@qq.com</span>
+                <span>全国服务热线：400-643-2548</span>
+                <br>
+                使用本网站即表示接受用户协议版权所有臻品有限公司粤公网安备 440103023331号
+                &nbsp;&nbsp;粤ICP备08114786号经营许可证：粤B2-20170777
+                违法和不良信息举报电话：4006789888&nbsp;算法推荐违规举报电话：4006789888
+            </p>
+            <div style="float: left;">
+                <a href="https://www.12315.cn/?spm=608.20767294.a2226n1.89.26221aa3XjCKMv"><img
+                        src="./image/foot_img/1.png" alt="" style="height: 40px;width: auto;"></a>
+                <a href="https://jbts.mct.gov.cn/?spm=608.20767294.a2226n1.88.26221aa3XjCKMv"><img
+                        src="./image/foot_img/2.png" alt="" style="height: 40px;width: auto;"></a>
+                <a href="https://www.zjjubao.com/?spm=608.20767294.a2226n1.90.26221aa3XjCKMv"><img
+                        src="./image/foot_img/3.png" alt="" style="height: 40px;width: auto;"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 页面加载时执行
+        window.onload = function () {
+            // 模拟点击第一个选项（我的资料）
+            showContent('order');
+
+            // 为昵称、绑定手机号、密码以及收货地址的输入框添加事件监听器，模拟即时保存数据
+            document.getElementById('nickname').addEventListener('input', function () {
+                // 这里模拟保存昵称的逻辑
+                console.log('模拟保存昵称：' + this.value);
+            });
+
+            document.getElementById('phone').addEventListener('input', function () {
+                // 这里模拟保存绑定手机号的逻辑
+                console.log('模拟保存绑定手机号：' + this.value);
+            });
+
+            document.getElementById('password').addEventListener('input', function () {
+                // 这里模拟保存密码的逻辑
+                console.log('模拟保存密码：' + this.value);
+            });
+
+            document.getElementById('receiverName').addEventListener('input', function () {
+                // 这里模拟保存收货人姓名的逻辑
+                console.log('模拟保存收货人姓名：' + this.value);
+            });
+
+            document.getElementById('receiverPhone').addEventListener('input', function () {
+                // 这里模拟保存收货人手机号的逻辑
+                console.log('模拟保存收货人手机号：' + this.value);
+            });
+
+            document.getElementById('addressDetail').addEventListener('input', function () {
+                // 这里模拟保存收货地址的逻辑
+                console.log('模拟保存收货地址：' + this.value);
+            });
+        };
+        // 点切换
+        function showContent(contentId) {
+            // 隐藏所有内容部分
+            const contentSections = document.querySelectorAll('.content-section');
+            contentSections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // 移除所有侧边栏选项的 active 类
+            const sidebarItems = document.querySelectorAll('.sidebar ul li');
+            sidebarItems.forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // 显示所选的内容部分并为对应的侧边栏选项添加 active 类
+            const selectedContent = document.getElementById(contentId);
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+                const selectedSidebarItem = document.querySelector(`.sidebar ul li[onclick="showContent('${contentId}')"]`);
+                if (selectedSidebarItem) {
+                    selectedSidebarItem.classList.add('active');
+                }
+            }
+        }
+
+        //  跳转搜索 
+        document.querySelector('.ok').addEventListener('click', function () {
+            window.location.href = 'sousuo.html';
+        });
+    </script>
+
+
+</body>
+
+</html>

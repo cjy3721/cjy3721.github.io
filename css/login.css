@@ -1,0 +1,225 @@
+* {
+    /* 去除浏览器默认内外边距 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1510px;
+    overflow-x: hidden;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    color: rgb(95, 95, 95);
+    background-color: white;
+}
+
+.flex {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_loginback {
+    max-width: 250px;
+    max-height: 100px;
+    margin: 10px 0;
+}
+
+.login-container {
+    background: url(../image/login/背景.png);
+    background-repeat: no-repeat;
+    /* 不重复显示背景图片 */
+    background-size: 100% auto;
+    /* 水平方向自动适应，垂直方向填满容器 */
+    background-position: center center;
+    /* 将背景图片在容器中居中显示 */
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 320px;
+    height: 340px;
+    padding: 25px;
+    background-color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login_r {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 320px;
+    height: 410px;
+    padding: 25px;
+    background-color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login_f {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 320px;
+    height: 350px;
+    padding: 25px;
+    background-color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.soild {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 2px solid #e1251b;
+    padding-bottom: 10px;
+}
+
+.login-container a {
+    color: #e1251b;
+    text-decoration: none;
+}
+
+.soild div:first-child {
+    font-size: 20px;
+    text-align: center;
+    color: #e1251b;
+    font-weight: bold;
+}
+
+.soild div:last-child {
+    margin-top: 10px;
+}
+
+.soild a:hover {
+    color: rgb(229, 91, 0);
+}
+
+
+/* 输入框*/
+.zhong {
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+
+.login-register-input {
+    padding: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#phone {
+    margin-bottom: 2vh;
+}
+
+/* 获得焦点时的样式 */
+.login-register-input:focus {
+    border-color: #e1251b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(245, 76, 3, 0.5);
+}
+
+/* 占位符样式 */
+.login-register-input::placeholder {
+    color: #999;
+}
+
+.forgot-password-link {
+    position: absolute;
+    right: 55px;
+    top: 50%;
+}
+
+.forgot-password-link a {
+    color: #999;
+}
+
+.forgot-password-link a:hover {
+    color: #e1251b;
+}
+
+/*条款  */
+.checkbox-container {
+    text-align: left;
+
+}
+
+.checkbox-container a:hover {
+    border-bottom: 1px solid #e1251b;
+    padding-bottom: 1px
+}
+
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgb(95, 95, 95);
+    margin-right: 5px;
+    position: relative;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #e1251b;
+    border-color: #e1251b;
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 9px;
+    left: 2px;
+    position: absolute;
+
+}
+
+/* 确定登录 */
+
+.dianji-denglu {
+    background-color: #e1251b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.dianji-denglu_f {
+    background-color: #e1251b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+
+.dianji-denglu:hover {
+    background-color: rgb(229, 91, 0);
+}
+
+.dianji-denglu:active {
+    transform: scale(0.98);
+}

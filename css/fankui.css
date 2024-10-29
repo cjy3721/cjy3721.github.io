@@ -1,0 +1,102 @@
+* 定义 msg 的框样式 */ .msg_content {
+    min-width: 927px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+.container_f {
+    width: 927px;
+    margin: 0 auto;
+}
+
+/* 中间样式 */
+.msg_center {
+    text-align: left;
+    max-width: 200%;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+/** form 表单信息 **/
+.form_box>div {
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.form_box>div:nth-child(2) {
+    margin-bottom: 15px;
+
+}
+
+.form_box>div>span {
+    display: none;
+    color: #e1251b;
+}
+
+.form_box>div>label {
+    display: inline-block;
+    width: 80px;
+    font-size: 16px;
+}
+
+.form_box>div>div>span {
+    color: #e1251b;
+}
+
+.form_box>div>label>span {
+
+    color: #e1251b;
+}
+
+.form_box>.form_btn_post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_box>div.form_btn_post button {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* 背景色为线性渐变 */
+    background-color: #e1251b;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.form_box>div.form_btn_post button:hover {
+    background-color: rgb(227, 75, 75);
+}
+
+/* 留言 */
+.form_box>div>textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px 10px;
+    border: solid 1px #dedede;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+}
+
+.form_box>div>textarea:focus {
+    outline: none;
+    border-color: black;
+}
+
+.form_box input {
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    height: 30px;
+    border: solid 1px #dedede;
+    line-height: 30px;
+}
+
+.form_box input:focus {
+    outline: none;
+    border: solid 1.5px black;
+}

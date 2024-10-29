@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id  */
+  src: url('iconfont.ttf?t=1728095926873') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 其他 */
+.icon-qita:before {
+  content: "\e6fe";
+}
+
+/* 正品 */
+.icon-icon:before {
+  content: "\e65e";
+}
+
+/* 鞋子 */
+.icon-xiebaopeishileimu:before {
+  content: "\e6f4";
+}
+
+/* 食品 */
+.icon-shipin:before {
+  content: "\e602";
+}
+
+/* 购物车 */
+.icon-gouwuche:before {
+  content: "\e801";
+}
+
+/* 值得信赖 */
+.icon-zhidexinlai:before {
+  content: "\e67f";
+}
+
+/* 登录 */
+.icon-denglu:before {
+  content: "\e70a";
+}
+
+/* 注册 */
+.icon-zhuce:before {
+  content: "\e71c";
+}
+
+/* 衣服 */
+.icon-clothes:before {
+  content: "\e8c7";
+}
+
+/* 数码 */
+.icon-classshumaweixiu:before {
+  content: "\e7f5";
+}
+
+/* 全球直采 */
+.icon-youxuan-quanqiuzhicai:before {
+  content: "\e6cf";
+}
+
+/* 退货 */
+.icon-service-wuyoutuihuanhuo:before {
+  content: "\e61d";
+}
+
+/* 保 */
+.icon-baohu:before {
+  content: "\e674";
+}
+
+/* 上 */
+.icon-shang:before {
+  content: "\e612";
+}
+
+/* 下 */
+.icon-xia:before {
+  content: "\e617";
+}
+
+/* 右 */
+.icon-right-1-copy:before {
+  content: "\e61f";
+}
+
+/* 客服 */
+.icon-kefu:before {
+  content: "\e572";
+}
+
+/* 反馈 */
+.icon-fankui:before {
+  content: "\e613";
+}

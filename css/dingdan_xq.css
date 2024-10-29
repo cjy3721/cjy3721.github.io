@@ -1,0 +1,138 @@
+/*主体内容*/
+.main {
+    padding: 10px;
+}
+
+.user_msg {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 11px;
+}
+
+.user_msg .location {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-image: linear-gradient(90deg,
+            #ff0000 5%, #ff7636 100%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+.user_msg .user {
+    flex: 1;
+}
+
+.user_msg .user .top {
+    display: flex;
+}
+
+.user_msg .user .top h6 {
+    width: 70px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.user_msg .user .top p {
+    font-size: 13px;
+}
+
+.user_msg .user .bottom {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+/*goods*/
+.goods {
+    display: flex;
+    padding: 11px 0 11px 11px;
+}
+
+.goods .pic {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.goods .info {
+    flex: 1;
+}
+
+.goods .info h5 {
+    font-size: 13px;
+    color: #262626;
+    font-weight: 400;
+}
+
+.goods .info p {
+    width: 150px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    font-size: 12px;
+    color: #888;
+}
+
+.goods .info span:first-child {
+    margin-right: 5px;
+}
+
+.goods .info .price {
+    font-size: 12px;
+}
+
+.goods .info .price .red {
+    color: #e1251b;
+}
+
+.goods .info .price i {
+    font-size: 16px;
+}
+
+.goods .info .price span:last-child {
+    margin-left: 5px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.goods .count {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+/* 配送方式 */
+
+.pannel {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.rest {
+    padding: 15px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.rest div {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.rest div {
+    justify-content: space-between;
+}
+
+
+.rest h5,
+.rest p {
+    font-size: 12px;
+    color: #262626;
+    font-weight: 400;
+}

@@ -1,0 +1,629 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2024-09-05 11:42:13
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2024-10-09 22:15:13
+ * @FilePath: \登录注册跳转e:\WangYeXiangMu\臻品购物城\sousuo.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臻品购物城</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/kefu.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="shortcut icon" href="./image/logo/logo2.png" type="image/x-icon" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('query');
+            if (query) {
+                // 在这里进行搜索相关的操作，比如根据 query 值在页面中显示搜索结果等
+                console.log('搜索关键词:', query);
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div style="background-color:#f8f9fa;height: 30px;">
+        <div class="container fl head">
+            <div class="head1">欢迎来到臻品购物城！
+                <script>
+                    var arrWeekDay = new Array("星期日", "星期一", "星期二", "星期三", "星期四",
+                        "星期五", "星期六", "星期日");
+                    var today;
+                    today = new Date();
+                    document.write("现在是北京时间：" + today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 " + arrWeekDay[today.getDay()]);
+                </script>
+            </div>
+
+            <div>
+                <ol class="fl head2">
+                    <li style="margin-right:10px;">
+                        <a href="./fankui.html" id="loginLink">
+                            <i class="iconfont icon-fankui"></i>
+                            <span class="text">意见反馈</span>
+                        </a>
+                    </li>
+                    <li style="margin-right:10px;">
+                        <a href="./index.html">
+                            <i class="iconfont icon-denglu"></i>
+                            <span class="text">退出登录</span>
+                        </a>
+                    </li>
+                    <li style="margin-right:10px;">
+                        <a href="./gerenzhongxin.html">
+                            <i class="iconfont icon-zhuce"></i>
+                            <span class="text">个人中心</span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: white;">
+        <div class="fl part1 ">
+            <div style="width: 270px;height: 70px;overflow: hidden;">
+                <a href="./index2.html"><img src="./image/logo/logo.png" alt="" style="width:auto;height: 70px;"></a>
+            </div>
+            <div>
+                <div class="search">
+                    <input type="text" name="" v7lue="" class="t_name">
+                    <button class="ok">确定</button>
+                </div>
+                <ol style="display: flex;justify-content: left;">
+                    <li class="tag">超值优惠</li>
+                    <li class="tag"><a href="">联想笔记本</a></li>
+                    <li class="tag"><a href="">华为手机</a></li>
+                    <li class="tag"><a href="">玛丽珍皮鞋</a></li>
+                    <li class="tag"><a href="">男士体恤</a></li>
+                </ol>
+            </div>
+            <div class="shopCar"> <a href="#car">
+                    <i class="iconfont  icon-gouwuche"></i>
+                    <span>我的购物车 </span>
+                </a>
+            </div>
+        </div>
+
+        <div style="width: 50%;margin: 0 auto;padding-bottom: 20px;">
+            <ol class="fl2">
+                <li class="item"><a href="./9.9huodong.html">全场9.9</a></li>
+                <li class="item"><a href="">特划算</a></li>
+                <li class="item"><a href="">臻品超市</a></li>
+                <li class="item"><a href="">臻品海鲜</a></li>
+                <li class="item"><a href="">品牌闪购</a></li>
+            </ol>
+
+        </div>
+    </div>
+
+
+
+    <!-- 活动 -->
+
+    <div style="background-image:url(./image/huodong/9.9_bj.png) ;padding-bottom: 30px;">
+        <div style="text-align: center;">
+            <img src="./image/huodong/9.9(1).png" alt="" style="width:auto;height: 100px;margin: 20px 0;">
+        </div>
+        <div id="box">
+            <div style="height: 30px;"></div>
+            <ul>
+            </ul>
+        </div>
+        <div
+            style="background-color: white;border-radius: 10px;width: 80%;margin-left: 10%;overflow: hidden;margin-top: 20px;padding-top: 10px;">
+            <div id="car" class="car">
+                <i class="iconfont  icon-gouwuche">购物车</i>
+                <div class="head_row hid">
+                    <div class="check left"> <i onclick="checkAll()">√</i></div>
+                    <div class="img left">全选</div>
+                    <div class="name left">商品名称</div>
+                    <div class="price left">单价</div>
+                    <div class="number left">数量</div>
+                    <div class="subtotal left">小计</div>
+                    <div class="ctrl left">操作</div>
+                </div>
+            </div>
+
+            <div id="sum_area">
+                <button id="pay"
+                    style="cursor: pointer;margin-right: 24px;border-radius: 10px;border: none;">去结算</button>
+                <div id="pay_amout">合计：<span id="price_num">0</span>元</div>
+            </div>
+
+
+            <div class="fixedtool">
+                <ul class="fixed_ul">
+                    <li class="fixed_li">
+                        <div class="fixed_lk" id="scroll-up">
+                            <i class="iconfont icon-shang"></i>
+                            <span style="display: block;margin-top: 2px;">顶部</span>
+                        </div>
+                    </li>
+                    <li class="fixed_li">
+                        <a href="./9.9huodong.html" class="fixed_lk">9.9秒杀</a>
+                    </li>
+                    <li class="fixed_li">
+                        <a href="./fankui.html" class="fixed_lk">
+                            <i class="iconfont icon-fankui"></i>
+                            <span style="display: block;margin-top: 2px;">反馈</span>
+                        </a>
+                    </li>
+                    <li class="fixed_li">
+                        <div class="fixed_lk" id="scroll-down">
+                            <span style="display: block;margin-top: 2px;">底部</span>
+                            <i class="iconfont icon-xia"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 客服 -->
+            <div class="dialogue-wrapper">
+                <div id="btn_open" class="dialogue-support-btn">
+                    <i class="dialogue-support-icon"></i>
+                    <i class="dialogue-support-line"></i>
+                    <span class="dialogue-support-text">联系客服</span>
+                </div>
+                <div class="dialogue-main">
+                    <div class="dialogue-header">
+                        <i id="btn_close" class="iconfont icon-xia"
+                            style="float: right;font-size: 30px; cursor: pointer;padding-right: 20px;"></i>
+                        <div class="dialogue-service-info">
+                            <div class="dialogue-service-img"><img src="./image/图标_img/官方.jpeg" alt=""
+                                    style="width: 40px;">
+                            </div>
+                            <div class="dialogue-service-title">
+                                <p class="dialogue-service-name">臻品购物城官方客服<svg t="1728145454441" class="icon"
+                                        viewBox="0 0 3072 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        p-id="5465" width="40" height="40">
+                                        <path
+                                            d="M102.4 0h2969.6v1024H102.4a102.4 102.4 0 0 1-102.4-102.4V102.4a102.4 102.4 0 0 1 102.4-102.4z"
+                                            fill="#F3DEB3" p-id="5466"></path>
+                                        <path
+                                            d="M463.7184 385.0752V345.088h352.5632v39.9872h63.0784v-90.112h-193.7408a388.1472 388.1472 0 0 0-14.6432-30.4128h-74.3424a219.5456 219.5456 0 0 1 13.5168 30.4128H400.0768v90.112h63.6416z m393.6768 389.7344v-175.7184H510.464v-42.8032h318.208V396.9024H448.512v377.9072h408.8832z m-91.2384-265.8304H510.464V444.2112h255.6928v64.768z m29.2864 217.3952H510.464v-78.848h284.9792v78.848z m261.888 48.4352c14.2848-36.4032 26.5728-76.9536 36.864-121.6512 10.3424-44.6976 18.688-91.648 25.088-140.8h235.4176v153.7536c0 20.2752-1.6896 39.0656-5.0688 56.32a146.7392 146.7392 0 0 1-22.528 52.3776h79.4112c6.4-16.5376 10.496-33.1264 12.3904-49.8176 1.8944-16.7424 2.816-35.9936 2.816-57.7536V452.6592h-295.68a39787.3152 39787.3152 0 0 1 4.5056-74.3424h314.8288V321.4336h-198.2464a776.96 776.96 0 0 0-14.08-57.4464h-78.848c2.2528 9.0112 4.4032 18.432 6.5024 28.16 2.048 9.728 3.9936 19.5072 5.888 29.2864h-208.9472v56.8832h103.6288a1272.32 1272.32 0 0 1-24.2176 204.4416 999.6288 999.6288 0 0 1-59.136 192.0512h79.4112z m715.264 0c23.296-47.6672 42.3424-99.4816 57.1392-155.4432 14.848-55.9616 26.0096-118.6304 33.536-188.1088a2275.0208 2275.0208 0 0 0 65.3312 267.776c8.2432 26.88 16.5376 52.1216 24.7808 75.776h67.0208c-9.728-25.5488-19.6096-54.272-29.5936-86.1696a2326.4256 2326.4256 0 0 1-28.416-99.1232 2674.0224 2674.0224 0 0 1-45.056-202.752h-49.5616c1.8944-19.1488 3.3792-38.912 4.5056-59.392 1.1264-20.48 2.048-41.4208 2.816-62.8224h-64.768a1796.864 1796.864 0 0 1-8.704 141.3632c-4.7104 45.824-11.3664 90.112-20.0192 132.9152a1019.392 1019.392 0 0 1-32.9216 123.648 709.632 709.632 0 0 1-48.7424 112.3328h72.6528zM1648.128 359.168a787.3024 787.3024 0 0 0-28.16-94.6176h-64.2048c5.2736 15.0016 9.8304 30.1056 13.824 45.3632 3.9424 15.1552 7.7824 31.5904 11.52 49.2544h67.0208z m47.872 415.6416V716.8H1636.864V380.5696h-122.2144v57.4464h56.32v336.7936h125.0304z m502.3744-417.3312a534.272 534.272 0 0 0-6.5024-24.5248l-7.3216-25.344a613.0688 613.0688 0 0 0-7.2704-23.6544 355.5328 355.5328 0 0 0-7.0656-19.4048H2109.952c4.5056 12.3904 9.1136 27.136 13.824 44.2368 4.6592 17.0496 8.4992 33.28 11.52 48.6912h63.0784z m268.6464 259.6864v-94.1056h106.4448V469.5552h-106.4448V338.8928h110.3872V284.2624h-324.9664v54.6304h153.7536v278.272m-74.3424-2.5088v-204.8h-59.6992v204.8m-39.424 159.5904v-54.0672h-46.1824V380.5696h-108.6976v50.688h46.7456v342.9888h108.1344z"
+                                            fill="#3F2D1A" p-id="5467"></path>
+                                        <path
+                                            d="M2658.048 450.4576l62.0032 62.976-341.0944 346.624-15.8208-16.0256v0.0512l-155.0848-157.5424 62.0544-62.976 108.7488 110.4896 279.1936-283.5968z"
+                                            fill="#F08B39" p-id="5468"></path>
+                                    </svg></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dialogue_contain" class="dialogue-contain">
+                        <p class="dialogue-service-contain"><span
+                                class="dialogue-text dialogue-service-text">您好，您有什么问题吗？以下是一些常见问题选项：</span></p>
+
+                        <p class="dialogue-service-contain">
+                            <span class="dialogue-text dialogue-service-text">
+                                1. 产品信息请回复 A；
+                                <br>2.订单状态请回复 B；
+                                <br>3.售后服务请回复C。</span>
+                        </p>
+
+                    </div>
+                    <div class="dialogue-submit">
+                        <p id="dialogue_hint" class="dialogue-hint"><span class="dialogue-hint-icon">!</span><span
+                                class="dialogue-hint-text">发送内容不能为空</span></p>
+                        <textarea id="dialogue_input" class="dialogue-input-text"
+                            placeholder="请输入(Enter提交,shift+Enter换行)"></textarea>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 脚注 -->
+            <footer id="footer" class="footer">
+                <div class="footer_width">
+                    <ol class="fl2 foot1">
+                        <li>
+                            <i class="iconfont icon-icon"></i>
+                            <span>正品保障</span>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-youxuan-quanqiuzhicai"></i>
+                            <span>全球直采</span>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-service-wuyoutuihuanhuo"></i>
+                            <span>无忧退换</span>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-baohu"></i>
+                            <span>值得信赖</span>
+                        </li>
+                    </ol>
+                    <div style="border-top: 1px solid #ebebeb;margin-bottom: 15px;"></div>
+                    <div class="fl">
+                        <dl class="foot2">
+                            <dt>服务保障</dt>
+                            <dd>1.正品保证</dd>
+                            <dd>2.7天无理由放心退</dd>
+                            <dd>3.24小时客户在线服务</dd>
+                        </dl>
+                        <dl class="foot2">
+                            <dt>支付方式</dt>
+                            <dd>1.支付宝支付</dd>
+                            <dd>2.微信支付</dd>
+                            <dd>3.qq支付</dd>
+                        </dl>
+                        <dl class="foot2">
+                            <dt>配送方式</dt>
+                            <dd>1.配送范围:仅中国内陆</dd>
+                            <dd>2.运费：全场包邮</dd>
+                        </dl>
+                        <dl class="foot2">
+                            <dt>售后服务</dt>
+                            <dd>1.退货政策：七天无理由退货（仅部分商品包邮，其它由客户自行承担）</dd>
+                            <dd>2.退货方式：联系客服后回寄商品&nbsp;&nbsp;&nbsp;退款方式：原支付方式退回</dd>
+                            <dd>3.时效：回寄商品后货到退款</dd>
+                        </dl>
+                    </div>
+                    <p class="foot3">
+                        <a href="">关于我们</a>&nbsp;|
+                        <a href="">品牌招商</a>&nbsp;|
+                        <a href="">平台规则</a>&nbsp;|
+                        <a href="">隐私条款</a>&nbsp;|
+                        <a href="">服务条款</a>
+                    <p>
+
+                    <p style="padding-top: 10px;">
+                        <span>QQ: 3491025882</span>
+                        <span>邮箱: 3491025882@qq.com</span>
+                        <span>全国服务热线：400-643-2548</span>
+                        <br>
+                        使用本网站即表示接受用户协议版权所有臻品有限公司粤公网安备 440103023331号
+                        &nbsp;&nbsp;粤ICP备08114786号经营许可证：粤B2-20170777
+                        违法和不良信息举报电话：4006789888&nbsp;算法推荐违规举报电话：4006789888
+                    </p>
+                    <div style="float: left;">
+                        <a href="https://www.12315.cn/?spm=608.20767294.a2226n1.89.26221aa3XjCKMv"><img
+                                src="./image/foot_img/1.png" alt="" style="height: 40px;width: auto;"></a>
+                        <a href="https://jbts.mct.gov.cn/?spm=608.20767294.a2226n1.88.26221aa3XjCKMv"><img
+                                src="./image/foot_img/2.png" alt="" style="height: 40px;width: auto;"></a>
+                        <a href="https://www.zjjubao.com/?spm=608.20767294.a2226n1.90.26221aa3XjCKMv"><img
+                                src="./image/foot_img/3.png" alt="" style="height: 40px;width: auto;"></a>
+                    </div>
+                </div>
+            </footer>
+
+
+            <script>
+                window.onload = function () {
+                    var aData = [{
+                        "imgUrl": "./image/sphuodong_9.9/吧唧套.png",
+                        "proName": "小红书同款喵喵毛绒吧唧套可爱谷子痛包学生书包痛包吧唧套挂件9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "15",
+                        "proComm": "1.3",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/库洛米帖纸.png",
+                        "proName": "三丽鸥咕卡贴纸儿童女孩手账专用美乐蒂库洛米玉桂狗布丁狗咕咔贴贴纸便宜可爱卡通古卡手帐贴画防水不重复8张9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "16",
+                        "proComm": "1.8",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/文具.png",
+                        "proName": "齐心吾皇万岁美人鱼盲盒盲袋便宜小玩意网红玩具文具套装盲袋可爱超萌 WHCC02笔记本中性笔贴纸尺子笔袋9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "20",
+                        "proComm": "5.2",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/可爱.png",
+                        "proName": "创意可爱生日礼物女生送闺蜜孩子走心个性小玩意礼品送同学好朋友60",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "60",
+                        "proComm": "3.6",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/猪.png",
+                        "proName": "单手解压随身携带的小玩意女生喜欢好看的猪猪放松减压手玩缓压力9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "12",
+                        "proComm": "4.3",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/捏捏.png",
+                        "proName": "三丽鸥捏捏乐解压网红爆款玩具慢回弹小玩意创意减压樂跨境t热卖9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "14",
+                        "proComm": "4.8",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9//万圣节.png",
+                        "proName": "万圣节讨糖袋幼儿园儿童礼物糖果创意礼品小众搞怪小玩意男生女生9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "15",
+                        "proComm": "0.5",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/蝴蝶结.png",
+                        "proName": "酒红色蝴蝶结发夹缎面发饰发卡订婚头饰法式鸭嘴夹子定型9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "12",
+                        "proComm": "1.2",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/汉服配饰.png",
+                        "proName": "汉服配饰中国风古装儿童头饰古风流苏发饰公主发夹发卡9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "18",
+                        "proComm": "1.6",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/山茶花抓夹.png",
+                        "proName": "粉色山茶花抓夹~超仙发抓甜美少女布艺玫瑰花发夹鲨鱼夹春季发饰9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "10",
+                        "proComm": "6.1",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/优雅蝴蝶结.png",
+                        "proName": "优雅蝴蝶结发夹女高级感珍珠流苏发卡网红气质侧边夹顶夹发饰弹夹9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "19",
+                        "proComm": "2.4",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/少年.png",
+                        "proName": "TNT时代少年团周边Q版可爱徽章吧唧马嘉祺荣亚轩刘耀文挂件胸针9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "15",
+                        "proComm": "8.1",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/碧蓝.png",
+                        "proName": "碧蓝档案周边纯白誓约爱丽丝优香小鸟游星野挂件立牌蔚蓝档案抱枕9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "25",
+                        "proComm": "4.3",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/牙刷.png",
+                        "proName": "柔丝软毛牙刷成人家用家庭装女士男士专用大人女生学生宿舍用套装9.9四支",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "16",
+                        "proComm": "5.4",
+                    },
+                    {
+                        "imgUrl": "./image/sphuodong_9.9/牙膏.png",
+                        "proName": "云南白药双效抗敏感牙膏薄荷缓解牙敏感护龈旗舰店官方正品90g9.9",
+                        "html": "",
+                        "probaoyou": "全场9.9",
+                        "proPrice": "9.9",
+                        "proYuanjia": "20",
+                        "proComm": "5.8",
+                    },
+
+                    ];
+                    var oBox = document.getElementById("box");
+                    var oCar = document.getElementById("car");
+                    var oUl = document.getElementsByTagName("ul")[0];
+
+                    console.log(aData);
+
+                    for (var i = 0; i < aData.length; i++) {
+                        var oLi = document.createElement("li");
+                        var data = aData[i];
+
+                        oLi.innerHTML += '<div class="pro_img"><img src="' + data["imgUrl"] + '"></div>';
+                        oLi.innerHTML += '<p class="pro_name"><a rel="nofollow" href="' + data["html"] + '">' + data["proName"] + '</a></p>';
+                        oLi.innerHTML += '<span class="pro_red">' + data["probaoyou"] + '</span>' + '<span class="pro_price">' + '¥' + data["proPrice"] + '元</p>' + '</span>'
+                            + '<span class="pro_yuanjia">' + '原价:' + data["proYuanjia"] + '元' + '</span>';
+                        oLi.innerHTML += '<span class="pro_rank">' + data["proComm"] + '万人好评</span>' + '<div class="add_btn">加入购物车</div>';
+                        oUl.appendChild(oLi);
+                    }
+
+                    var aBtn = getClass(oBox, "add_btn");//获取box下的所有添加购物车按钮
+                    var number = 0;//初始化商品数量
+                    for (var i = 0; i < aBtn.length; i++) {
+                        number++;
+                        aBtn[i].index = i;
+                        aBtn[i].onclick = function () {
+                            var oDiv = document.createElement("div");
+                            var data = aData[this.index];  //根据当前点击按钮的索引获取对应的商品数据
+                            oDiv.className = "row hid";//接着使用字符串拼接的方式为 
+                            oDiv.innerHTML += '<div class="check left"> <i class="i_check" id="i_check" onclick="i_check()" >√</i></div>';
+                            oDiv.innerHTML += '<div class="img left"><img src="' + data["imgUrl"] + '" width="80" height="80"></div>';
+                            oDiv.innerHTML += '<div class="name left"><span>' + data["proName"] + '</span></div>';
+                            oDiv.innerHTML += '<div class="price left"><span>' + data["proPrice"] + '元</span></div>';
+                            oDiv.innerHTML += ' <div class="item_count_i"><div class="num_count"><div class="count_d">-</div><div class="c_num">1</div><div class="count_i">+</div></div> </div>';
+                            oDiv.innerHTML += '<div class="subtotal left"><span>' + data["proPrice"] + '元</span></div>';
+                            oDiv.innerHTML += '<div class="ctrl left"><a rel="nofollow" href="javascript:;">×</a></div>';
+
+
+                            // 购物车
+                            oCar.appendChild(oDiv);
+                            var flag = true;
+                            var check = oDiv.firstChild.getElementsByTagName("i")[0];
+                            check.onclick = function () {
+                                // console.log(check.className);
+                                if (check.className == "i_check i_acity") {
+                                    check.classList.remove("i_acity");
+
+                                } else {
+                                    check.classList.add("i_acity");
+                                }
+                                getAmount();
+                            }
+                            var delBtn = oDiv.lastChild.getElementsByTagName("a")[0];
+                            delBtn.onclick = function () {
+                                var result = confirm("确定删除吗?");
+                                if (result) {
+                                    oCar.removeChild(oDiv);
+                                    number--;
+                                    getAmount();
+                                }
+                            }
+                            var i_btn = document.getElementsByClassName("count_i");
+                            for (var k = 0; k < i_btn.length; k++) {
+                                i_btn[k].onclick = function () {
+                                    bt = this;
+                                    //获取小计节点
+                                    at = this.parentElement.parentElement.nextElementSibling;
+                                    //获取单价节点
+                                    pt = this.parentElement.parentElement.previousElementSibling;
+                                    //获取数量值
+                                    node = bt.parentNode.childNodes[1];
+                                    console.log(node);
+                                    num = node.innerText;
+                                    num = parseInt(num);
+                                    num++;
+                                    node.innerText = num;
+                                    //获取单价
+                                    price = pt.innerText;
+                                    price = price.substring(0, price.length - 1);
+                                    //计算小计值
+                                    at.innerText = price * num + "元";
+                                    //计算总计值
+                                    getAmount();
+                                }
+                            }
+                            //获取所有的数量减号按钮
+                            var d_btn = document.getElementsByClassName("count_d");
+                            for (k = 0; k < i_btn.length; k++) {
+                                d_btn[k].onclick = function () {
+                                    bt = this;
+                                    //获取小计节点
+                                    at = this.parentElement.parentElement.nextElementSibling;
+                                    //获取单价节点
+                                    pt = this.parentElement.parentElement.previousElementSibling;
+                                    //获取c_num节点
+                                    node = bt.parentNode.childNodes[1];
+                                    num = node.innerText;
+                                    num = parseInt(num);
+                                    if (num > 1) {
+                                        num--;
+                                    }
+                                    node.innerText = num;
+                                    //获取单价
+                                    price = pt.innerText;
+                                    price = price.substring(0, price.length - 1);
+                                    //计算小计值		
+                                    at.innerText = price * num + "元";
+                                    //计算总计值
+                                    getAmount();
+                                }
+                            }
+
+                            delBtn.onclick = function () {
+                                var result = confirm("确定删除吗?");
+                                if (result) {
+                                    oCar.removeChild(oDiv);
+                                    number--;
+                                    getAmount();
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+                function getClass(oBox, tagname) {
+                    var aTag = oBox.getElementsByTagName("*");
+                    var aBox = [];
+                    for (var i = 0; i < aTag.length; i++) {
+                        if (aTag[i].className == tagname) {
+                            aBox.push(aTag[i]);
+                        }
+                    }
+                    return aBox;
+                }
+                var index = false;
+                function checkAll() {
+                    var choose = document.getElementById("car").getElementsByTagName("i");
+                    // console.log(choose);
+                    if (choose.length != 1) {
+                        for (i = 1; i < choose.length; i++) {
+                            if (!index) {
+                                choose[0].classList.add("i_acity2")
+                                choose[i].classList.add("i_acity");
+                            } else {
+                                choose[i].classList.remove("i_acity");
+                                choose[0].classList.remove("i_acity2")
+                            }
+                        }
+                        index = !index;
+                    }
+                    getAmount();
+                }
+
+
+                //进行价格合计
+                function getAmount() {
+                    ns = document.getElementsByClassName("i_acity");
+                    sum = 0;
+                    document.getElementById("price_num").innerText = sum;
+                    for (y = 0; y < ns.length; y++) {
+                        amount_info = ns[y].parentElement.parentElement.lastElementChild.previousElementSibling;
+                        let numText = amount_info.innerText;
+                        console.log("待转换的文本：", numText);  // 输出待转换的文本用于调试
+                        let num = parseInt(numText);
+                        if (isNaN(num)) {  // 检查是否转换成功
+                            console.error("转换失败，文本：" + numText);  // 输出错误信息
+                            continue;  // 转换失败则跳过本次循环
+                        }
+                        sum += num;
+                        document.getElementById("price_num").innerText = sum;
+                    }
+                }
+
+                // 获取去结算按钮元素
+                const payButton = document.getElementById('pay');
+                // 为按钮添加点击事件，跳转到指定页面
+                payButton.addEventListener('click', function () {
+                    window.location.href = 'zhifu.html';
+                });
+
+                //  跳转搜索 
+                document.querySelector('.ok').addEventListener('click', function () {
+                    window.location.href = 'sousuo.html';
+                });
+            </script>
+            <script src="./js/lunbo.js"></script>
+            <!-- 右侧栏上下 -->
+            <script src="./js/right_topb.js"></script>
+            <!-- 左侧栏 -->
+            <script src="./js/cebianlan.js"></script>
+            <script src="./js/kefu.js"></script>
+
+</body>
+
+</html>

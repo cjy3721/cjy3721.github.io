@@ -1,0 +1,895 @@
+* {
+    /* 去除浏览器默认内外边距 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1510px;
+    /* overflow-x: hidden; */
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    color: rgb(95, 95, 95);
+    background-color: #f8f9fa;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fl2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fl3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head {
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 6px;
+    color: rgb(95, 95, 95);
+}
+
+.head1>a {
+    color: #e1251b;
+    text-decoration: none;
+}
+
+.head1>a:hover {
+    /* text-decoration: underline; 原有下划线*/
+    border-bottom: 2px solid;
+    /* 设置一个实线的下边框作为下划线 */
+    border-color: currentColor;
+    /* 让边框颜色和文字颜色相同，currentColor 代表继承当前文字颜色 */
+    padding-bottom: 1px;
+    /* 调整这个值来控制下划线与文字之间的间距*/
+}
+
+.head2>li>a {
+    color: rgb(95, 95, 95);
+}
+
+.head2>li>a:hover {
+    color: #e1251b;
+}
+
+.part1 {
+    margin: 0 8% 0 8%;
+    height: 125px;
+}
+
+.part1>div:nth-child(2) {
+    width: 550px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.t_name {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 13px;
+    color: rgb(95, 95, 95);
+    letter-spacing: 0.1em;
+    border-radius: 30px;
+    border: 2px solid #e1251b;
+    outline: none;
+    /* 去掉默认的聚焦轮廓 */
+}
+
+.t_name:focus {
+    border-color: #e1251b;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    /* 添加一个红色的发光效果，可根据需要调整 */
+}
+
+.search>button {
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: -100px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 13px;
+    background: #e1251b;
+    cursor: pointer;
+}
+
+.search>button:hover {
+    background-color: rgb(227, 75, 75);
+}
+
+.tag {
+    margin: 2px 0 0 15px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.tag:first-child {
+    color: #e1251b;
+}
+
+.tag a {
+    color: rgb(95, 95, 95);
+}
+
+.tag a:hover {
+    color: #e1251b;
+}
+
+.shopCar {
+    margin-bottom: 20px;
+    width: 138px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    /*border-width: 1px;
+    border-style: solid;
+    border-color: ;*/
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-image: initial;
+    cursor: pointer;
+}
+
+.shopCar>a {
+    color: black;
+}
+
+.shopCar a:hover {
+    color: #e1251b;
+}
+
+.item {
+    height: 25px;
+    line-height: 25px;
+}
+
+.item>a {
+    font-size: 16px;
+    color: #e1251b;
+
+}
+
+/* 分类 */
+.spfenglei {
+    width: 25%;
+    height: auto;
+    padding: 20px 0px 10px 10px;
+    cursor: pointer;
+
+}
+
+.hover {
+    margin: 10px 0;
+    font-size: 14px;
+    float: left;
+}
+
+.hover>i {
+    margin-right: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+.hover a {
+    color: black;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.hover a:hover {
+    color: #e1251b;
+}
+
+/* 轮播图*/
+.banner {
+    width: 52%;
+    height: auto;
+    background-color: white;
+    border: 10px solid white;
+    position: relative;
+}
+
+.banner>.banner_img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    /*图片居中*/
+    display: flex;
+    position: relative;
+}
+
+.banner>.banner_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.swarp_active {
+    visibility: visible !important;
+}
+
+.point {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.point>li {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin-right: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.point>li.active {
+    background-color: #e1251b;
+
+}
+
+.point>li.last-child {
+    margin-right: 0;
+}
+
+.page {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+
+/*左右按键样式 */
+.page>.iconfont {
+    font-size: 25px;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+.page:hover {
+    background-color: #fff;
+}
+
+.page:hover>.iconfont {
+    color: black;
+}
+
+.right {
+    right: 20px;
+}
+
+.left {
+    left: 20px;
+}
+
+.left>.iconfont {
+    transform: rotate(180deg)
+}
+
+/* 特惠 */
+.tehuisp {
+    width: 8%;
+    height: auto;
+    border-radius: 10px;
+    border: 10px solid white;
+    background-color: white;
+}
+
+.tehuiimg {
+    width: 84px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* 商品 */
+#box {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.box_head {
+    padding: 15px 0 15px 30px;
+    height: 50px;
+    font-size: 18px;
+    color: black;
+
+}
+
+#box .t_type input[type="radio"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+#box .t_type {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 15px;
+    font-size: 18px;
+}
+
+#box .t_type>label>a {
+    width: auto;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: black;
+}
+
+#box .t_type input:checked+a {
+    color: #e1251b;
+}
+
+
+/*  */
+#box ul {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+
+#box li {
+    width: 220px;
+    height: 330px;
+    float: left;
+    margin-right: 18px;
+    border-radius: 10px;
+    padding: 0px 0 10px 0;
+    background: #FFF;
+    border: 1px solid #ececec;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+}
+
+#box li:nth-child(5n) {
+    margin-right: 0;
+    /* 设置每一排第四个列表项右外边距为 0 */
+}
+
+#box li:hover {
+    border: 1px solid #e1251b;
+}
+
+.hid {
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+    text-align: center;
+}
+
+.pro_img {
+    width: 100%;
+    height: 220px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pro_img img {
+    width: 100%;
+    height: auto;
+}
+
+p.pro_name {
+    width: 218px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pro_#e1251b {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #ff0036;
+    background-color: #f6e2e6;
+    border-radius: 5px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.pro_name a {
+    color: black;
+    font-size: 15px;
+    display: block;
+    max-height: 34px;
+    /* 2行的高度，根据实际行高调整 */
+    line-height: 17px;
+    /* 假设行高为1.5em，可根据实际情况修改 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pro_name a:hover {
+    color: #e1251b;
+    font-weight: bold;
+}
+
+.pro_red {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #ff0036;
+    background-color: #f6e2e6;
+    border-radius: 5px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.pro_price {
+    color: #e1251b;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.pro_yuanjia {
+    position: absolute;
+    right: 10px;
+    bottom: 52px;
+    color: #999;
+    text-decoration: line-through;
+    padding-left: 8px;
+}
+
+.pro_rank {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+
+#box li .add_btn:hover {
+    background-color: rgb(227, 75, 75);
+}
+
+.add_btn {
+    width: 90px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    bottom: 18px;
+    line-height: 25px;
+    color: white;
+    background-color: #e1251b;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.car {
+    font-size: 14px;
+}
+
+.car>i {
+    padding: 20px 0 0 20px;
+    font-size: 18px;
+}
+
+.car .check {
+    width: 50px;
+
+}
+
+.car .check i {
+    color: #fff;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #e0e0e0;
+    margin-left: 24px;
+    background-color: #fff;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+
+}
+
+.i_acity {
+
+    border-color: #e1251b !important;
+    background-color: #e1251b !important;
+}
+
+.car .img {
+    width: 190px;
+}
+
+.car .img img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 3px auto;
+}
+
+.car .name {
+    width: 300px;
+}
+
+.car .name span {
+    line-height: 1;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.car .price {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.car .price span {
+    color: #e1251b;
+}
+
+.car .number {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.car .subtotal {
+    width: 150px;
+    margin: 0 auto;
+
+}
+
+.car .ctrl {
+    width: 150px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.car .ctrl a {
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 30px auto;
+    line-height: 25px;
+    color: #e1251b;
+}
+
+.car .ctrl a:hover {
+    color: #FFF;
+    background: #e1251b;
+    border-radius: 50%;
+}
+
+.head_row {
+    height: 70px;
+    line-height: 70px;
+}
+
+.head_row,
+.row {
+    border-bottom: solid 1px #e0e0e08d;
+}
+
+.row {
+    height: 86px;
+    line-height: 86px;
+    padding: 0 0 15px 0;
+    text-align: center;
+}
+
+#sum_area {
+    height: 45px;
+    margin: 20px auto;
+}
+
+#sum_area #pay {
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    float: right;
+    line-height: 40px;
+    font-size: 16px;
+    background: #e1251b;
+    color: white;
+}
+
+#sum_area #pay:hover {
+    background-color: rgb(227, 75, 75);
+    ;
+}
+
+#sum_area #pay_amout {
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    float: right;
+    line-height: 50px;
+    font-size: 16px;
+    color: #e1251b;
+}
+
+#sum_area #pay_amout #price_num {
+    width: 100px;
+    height: 45px;
+    font-size: 16px;
+    color: #e1251b;
+    /*	float: left;*/
+}
+
+/* 支付方式 */
+.payment-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 700px;
+}
+
+.payment-modal img:first-child {
+    margin-right: 50px;
+}
+
+.payment-modal img {
+    width: 200px;
+    float: left;
+    ;
+}
+
+.confirm-pay {
+    background-color: #e1251b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 300px;
+    margin: 20px 0 20px 200px;
+}
+
+/*  */
+.item_count_i {
+    height: 85px;
+    width: auto;
+    /*border: 1px solid black;*/
+    float: left;
+    margin: 0 auto;
+}
+
+.num_count {
+    width: 150px;
+    height: 40px;
+    border: 1.2px solid #E0E0E0;
+    float: right;
+    margin-top: 21px;
+
+}
+
+.count_i {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 21px;
+    color: #747474;
+}
+
+.count_i:hover {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 21px;
+    color: #747474;
+    background: #E0E0E0;
+    cursor: pointer;
+}
+
+.c_num {
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    color: #747474;
+}
+
+.count_d {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    color: #747474;
+}
+
+.count_d:hover {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    color: #747474;
+    background: #E0E0E0;
+    cursor: pointer;
+}
+
+.i_acity2 {
+    border-color: #e1251b !important;
+    background-color: white !important;
+    overflow: hidden;
+}
+
+/* 脚注 */
+.footer {
+    line-height: 22px;
+    padding: 80px 0 20px 0;
+    background-color: white;
+}
+
+.footer_width {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.foot1 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #e1251b;
+    text-align: center;
+    height: 27px;
+}
+
+.foot1 li i {
+    font-size: 25px;
+}
+
+.foot2 {
+    height: 100px;
+}
+
+.foot2 dt {
+    align-self: flex-start;
+    font-weight: 600;
+}
+
+.foot3>a {
+    color: #e1251b;
+}
+
+/* 快速跳转箭头 */
+.scroll-arrows {
+    position: fixed;
+    bottom: 50%;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-arrows button {
+    margin-bottom: 30px;
+    background-color: #e1251b;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+/* 侧边栏 */
+.fixedtool {
+    position: fixed;
+    width: 60px;
+    height: 250px;
+    top: 200px;
+    right: 50px;
+}
+
+.fixedtool .fixed_ul {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+}
+
+.fixedtool .fixed_ul .fixed_li {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+}
+
+.fixedtool .fixed_ul .fixed_li .fixed_lk {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.fixedtool .fixed_ul .fixed_li .fixed_lk::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 1px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -20px;
+    background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+}
+
+.fixedtool .fixed_ul .fixed_li .fixed_lk:hover {
+    background-color: #c81623;
+    color: #fff;
+}

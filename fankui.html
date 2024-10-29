@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>反馈中心</title>
+    <link rel="stylesheet" href="./css/fankui.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="shortcut icon" href="./image/logo/logo2.png" type="image/x-icon" />
+</head>
+
+<body style="background-color: white;">
+    <div style="background-color:#f8f9fa;height: 30px;">
+        <div class="container fl head">
+            <div class="head1">欢迎来到臻品购物城！
+                <script>
+                    var arrWeekDay = new Array("星期日", "星期一", "星期二", "星期三", "星期四",
+                        "星期五", "星期六", "星期日");
+                    var today;
+                    today = new Date();
+                    document.write("现在是北京时间：" + today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 " + arrWeekDay[today.getDay()]);
+                </script>
+            </div>
+            <div>
+                <ol class="fl head2">
+                    <li style="margin-right:10px;">
+                        <a href="./fankui.html" id="loginLink">
+                            <i class="iconfont icon-fankui"></i>
+                            <span class="text">意见反馈</span>
+                        </a>
+                    </li>
+                    <li style="margin-right:10px;">
+                        <a href="./index.html">
+                            <i class="iconfont icon-denglu"></i>
+                            <span class="text">退出登录</span>
+                        </a>
+                    </li>
+                    <li style="margin-right:10px;">
+                        <a href="./gerenzhongxin.html">
+                            <i class="iconfont icon-zhuce"></i>
+                            <span class="text">个人中心</span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding: 10px 20% 0px 16%;">
+        <div style="width: 200px;height: auto;">
+            <a href="./index2.html"><img src="./image/logo/logo.png" alt="" style="width:auto;height: 70px;"></a>
+        </div>
+        <div style="text-align: center;color: black;font-size: 22px;">意见反馈</div>
+    </div>
+    <div class="msg_content">
+        <div class="container_f">
+            <aside class="msg_center">
+                <!--form表单信息-->
+                <div class="form_box">
+                    <div>
+                        <div style="font-size: 16px;margin-bottom: 10px;">Hi，请输入您对网页商城的问题反馈或建议吧<span>*</span>～</div>
+                        <textarea class="liuyan" placeholder="请描述使用问题，某个功能无法使用/不好用、流程受阻、页面卡顿、或其他产品建议（5个字以上）"></textarea>
+                    </div>
+                    <div>
+                        <div style="font-size: 16px;margin-bottom: 10px;">如果可以的话请您留下您的联系方式，解决过程中方便我们与您联系<span>*</span>～
+                        </div>
+                        <label>手机号<span>*</span></label>
+                        <input type="text" placeholder="请输入手机号" />
+                    </div>
+                    <div>
+                        <label>邮箱<span>*</span></label>
+                        <input type="text" placeholder="请输入邮箱账号" />
+                    </div>
+
+                    <div class="form_btn_post">
+                        <button>提交</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div style="border-top: 1px solid #ebebeb;"></div>
+    <!-- 脚注 -->
+    <footer id="footer" class="footer">
+        <div class="footer_width">
+            <ol class="fl2 foot1">
+                <li>
+                    <i class="iconfont icon-icon"></i>
+                    <span>正品保障</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-youxuan-quanqiuzhicai"></i>
+                    <span>全球直采</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-service-wuyoutuihuanhuo"></i>
+                    <span>无忧退换</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-baohu"></i>
+                    <span>值得信赖</span>
+                </li>
+            </ol>
+            <div style="border-top: 1px solid #ebebeb;margin-bottom: 15px;"></div>
+            <div class="fl">
+                <dl class="foot2">
+                    <dt>服务保障</dt>
+                    <dd>1.正品保证</dd>
+                    <dd>2.7天无理由放心退</dd>
+                    <dd>3.24小时客户在线服务</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>支付方式</dt>
+                    <dd>1.支付宝支付</dd>
+                    <dd>2.微信支付</dd>
+                    <dd>3.qq支付</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>配送方式</dt>
+                    <dd>1.配送范围:仅中国内陆</dd>
+                    <dd>2.运费：全场包邮</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>售后服务</dt>
+                    <dd>1.退货政策：七天无理由退货（仅部分商品包邮，其它由客户自行承担）</dd>
+                    <dd>2.退货方式：联系客服后回寄商品&nbsp;&nbsp;&nbsp;退款方式：原支付方式退回</dd>
+                    <dd>3.时效：回寄商品后货到退款</dd>
+                </dl>
+            </div>
+            <p class="foot3">
+                <a href="">关于我们</a>&nbsp;|
+                <a href="">品牌招商</a>&nbsp;|
+                <a href="">平台规则</a>&nbsp;|
+                <a href="">隐私条款</a>&nbsp;|
+                <a href="">服务条款</a>
+            <p>
+
+            <p style="padding-top: 10px;">
+                <span>QQ: 3491025882</span>
+                <span>邮箱: 3491025882@qq.com</span>
+                <span>全国服务热线：400-643-2548</span>
+                <br>
+                使用本网站即表示接受用户协议版权所有臻品有限公司粤公网安备 440103023331号
+                &nbsp;&nbsp;粤ICP备08114786号经营许可证：粤B2-20170777
+                违法和不良信息举报电话：4006789888&nbsp;算法推荐违规举报电话：4006789888
+            </p>
+            <div style="float: left;">
+                <a href="https://www.12315.cn/?spm=608.20767294.a2226n1.89.26221aa3XjCKMv"><img
+                        src="./image/foot_img/1.png" alt="" style="height: 40px;width: auto;"></a>
+                <a href="https://jbts.mct.gov.cn/?spm=608.20767294.a2226n1.88.26221aa3XjCKMv"><img
+                        src="./image/foot_img/2.png" alt="" style="height: 40px;width: auto;"></a>
+                <a href="https://www.zjjubao.com/?spm=608.20767294.a2226n1.90.26221aa3XjCKMv"><img
+                        src="./image/foot_img/3.png" alt="" style="height: 40px;width: auto;"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.form_btn_post button').addEventListener('click', function () {
+            const textarea = document.querySelector('.liuyan');
+            const text = textarea.value.trim();
+            if (text.length >= 5) {
+                window.location.href = 'fankui_cg.html';
+            } else {
+                alert('请至少输入 5 个字。');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1027 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2024-09-05 11:42:13
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2024-10-09 23:21:51
+ * @FilePath: \登录注册跳转e:\WangYeXiangMu\臻品购物城\sousuo.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臻品购物城</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/kefu.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="shortcut icon" href="./image/logo/logo2.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div style="background-color:#f8f9fa;height: 30px;">
+        <div class="container fl head">
+            <div class="head1">欢迎来到臻品购物城！
+                <script>
+                    var arrWeekDay = new Array("星期日", "星期一", "星期二", "星期三", "星期四",
+                        "星期五", "星期六", "星期日");
+                    var today;
+                    today = new Date();
+                    document.write("现在是北京时间：" + today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 " + arrWeekDay[today.getDay()]);
+                </script>
+            </div>
+
+            <div>
+                <ol class="fl head2">
+                    <li style="margin-right:10px;">
+                        <a href="./fankui.html" id="loginLink">
+                            <i class="iconfont icon-fankui"></i>
+                            <span class="text">意见反馈</span>
+                        </a>
+                    </li>
+                    <li style="margin-right:10px;">
+                        <a href="./index.html">
+                            <i class="iconfont icon-denglu"></i>
+                            <span class="text">退出登录</span>
+                        </a>
+                    </li>
+                    <li style="margin-right:10px;">
+                        <a href="./gerenzhongxin.html">
+                            <i class="iconfont icon-zhuce"></i>
+                            <span class="text">个人中心</span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: white;">
+        <div class="fl part1 ">
+            <div style="width: 270px;height: 70px;overflow: hidden;">
+                <a href="./index2.html"><img src="./image/logo/logo.png" alt="" style="width:auto;height: 70px;"></a>
+            </div>
+            <div>
+                <div class="search">
+                    <input type="text" name="" v7lue="" class="t_name">
+                    <button class="ok">确定</button>
+                </div>
+                <ol style="display: flex;justify-content: left;">
+                    <li class="tag">超值优惠</li>
+                    <li class="tag"><a href="">联想笔记本</a></li>
+                    <li class="tag"><a href="">华为手机</a></li>
+                    <li class="tag"><a href="">玛丽珍皮鞋</a></li>
+                    <li class="tag"><a href="">男士体恤</a></li>
+                </ol>
+            </div>
+            <div class="shopCar"> <a href="#car">
+                    <i class="iconfont  icon-gouwuche"></i>
+                    <span>我的购物车 </span>
+                </a>
+            </div>
+        </div>
+
+        <div style="width: 50%;margin: 0 auto;margin-top: -20px;">
+            <ol class="fl2">
+                <li class="item"><a href="./9.9huodong.html">全场9.9</a></li>
+                <li class="item"><a href="">特划算</a></li>
+                <li class="item"><a href="">臻品超市</a></li>
+                <li class="item"><a href="">臻品海鲜</a></li>
+                <li class="item"><a href="">品牌闪购</a></li>
+            </ol>
+        </div>
+        <div style="height: 15px;"></div>
+
+    </div>
+
+
+    <div id="box" class="shangp" style="margin-top: 10px;">
+        <h4 id="" class="box_head">全部商品</h4>
+        <ul>
+        </ul>
+    </div>
+    <div
+        style="background-color: white;border-radius: 10px;width: 80%;margin-left: 10%;overflow: hidden;margin-top: 20px;padding-top: 10px;margin-bottom: 20px;">
+        <div id="car" class="car">
+            <i class="iconfont  icon-gouwuche">购物车</i>
+            <div class="head_row hid">
+                <div class="check left"> <i onclick="checkAll()">√</i></div>
+                <div class="img left">全选</div>
+                <div class="name left">商品名称</div>
+                <div class="price left">单价</div>
+                <div class="number left">数量</div>
+                <div class="subtotal left">小计</div>
+                <div class="ctrl left">操作</div>
+            </div>
+        </div>
+
+        <div id="sum_area">
+            <button id="pay" style="cursor: pointer;margin-right: 24px;border-radius: 10px;border: none;">去结算</button>
+            <div id="pay_amout">合计：<span id="price_num">0</span>元</div>
+        </div>
+    </div>
+
+
+    <div class="fixedtool">
+        <ul class="fixed_ul">
+            <li class="fixed_li">
+                <div class="fixed_lk" id="scroll-up">
+                    <i class="iconfont icon-shang"></i>
+                    <span style="display: block;margin-top: 2px;">顶部</span>
+                </div>
+            </li>
+            <li class="fixed_li">
+                <a href="./9.9huodong.html" class="fixed_lk">9.9秒杀</a>
+            </li>
+            <li class="fixed_li">
+                <a href="./fankui.html" class="fixed_lk">
+                    <i class="iconfont icon-fankui"></i>
+                    <span style="display: block;margin-top: 2px;">反馈</span>
+                </a>
+            </li>
+            <li class="fixed_li">
+                <div class="fixed_lk" id="scroll-down">
+                    <span style="display: block;margin-top: 2px;">底部</span>
+                    <i class="iconfont icon-xia"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 客服 -->
+    <div class="dialogue-wrapper">
+        <div id="btn_open" class="dialogue-support-btn">
+            <i class="dialogue-support-icon"></i>
+            <i class="dialogue-support-line"></i>
+            <span class="dialogue-support-text">联系客服</span>
+        </div>
+        <div class="dialogue-main">
+            <div class="dialogue-header">
+                <i id="btn_close" class="iconfont icon-xia"
+                    style="float: right;font-size: 30px; cursor: pointer;padding-right: 20px;"></i>
+                <div class="dialogue-service-info">
+                    <div class="dialogue-service-img"><img src="./image/图标_img/官方.jpeg" alt="" style="width: 40px;">
+                    </div>
+                    <div class="dialogue-service-title">
+                        <p class="dialogue-service-name">臻品购物城官方客服<svg t="1728145454441" class="icon"
+                                viewBox="0 0 3072 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5465"
+                                width="40" height="40">
+                                <path
+                                    d="M102.4 0h2969.6v1024H102.4a102.4 102.4 0 0 1-102.4-102.4V102.4a102.4 102.4 0 0 1 102.4-102.4z"
+                                    fill="#F3DEB3" p-id="5466"></path>
+                                <path
+                                    d="M463.7184 385.0752V345.088h352.5632v39.9872h63.0784v-90.112h-193.7408a388.1472 388.1472 0 0 0-14.6432-30.4128h-74.3424a219.5456 219.5456 0 0 1 13.5168 30.4128H400.0768v90.112h63.6416z m393.6768 389.7344v-175.7184H510.464v-42.8032h318.208V396.9024H448.512v377.9072h408.8832z m-91.2384-265.8304H510.464V444.2112h255.6928v64.768z m29.2864 217.3952H510.464v-78.848h284.9792v78.848z m261.888 48.4352c14.2848-36.4032 26.5728-76.9536 36.864-121.6512 10.3424-44.6976 18.688-91.648 25.088-140.8h235.4176v153.7536c0 20.2752-1.6896 39.0656-5.0688 56.32a146.7392 146.7392 0 0 1-22.528 52.3776h79.4112c6.4-16.5376 10.496-33.1264 12.3904-49.8176 1.8944-16.7424 2.816-35.9936 2.816-57.7536V452.6592h-295.68a39787.3152 39787.3152 0 0 1 4.5056-74.3424h314.8288V321.4336h-198.2464a776.96 776.96 0 0 0-14.08-57.4464h-78.848c2.2528 9.0112 4.4032 18.432 6.5024 28.16 2.048 9.728 3.9936 19.5072 5.888 29.2864h-208.9472v56.8832h103.6288a1272.32 1272.32 0 0 1-24.2176 204.4416 999.6288 999.6288 0 0 1-59.136 192.0512h79.4112z m715.264 0c23.296-47.6672 42.3424-99.4816 57.1392-155.4432 14.848-55.9616 26.0096-118.6304 33.536-188.1088a2275.0208 2275.0208 0 0 0 65.3312 267.776c8.2432 26.88 16.5376 52.1216 24.7808 75.776h67.0208c-9.728-25.5488-19.6096-54.272-29.5936-86.1696a2326.4256 2326.4256 0 0 1-28.416-99.1232 2674.0224 2674.0224 0 0 1-45.056-202.752h-49.5616c1.8944-19.1488 3.3792-38.912 4.5056-59.392 1.1264-20.48 2.048-41.4208 2.816-62.8224h-64.768a1796.864 1796.864 0 0 1-8.704 141.3632c-4.7104 45.824-11.3664 90.112-20.0192 132.9152a1019.392 1019.392 0 0 1-32.9216 123.648 709.632 709.632 0 0 1-48.7424 112.3328h72.6528zM1648.128 359.168a787.3024 787.3024 0 0 0-28.16-94.6176h-64.2048c5.2736 15.0016 9.8304 30.1056 13.824 45.3632 3.9424 15.1552 7.7824 31.5904 11.52 49.2544h67.0208z m47.872 415.6416V716.8H1636.864V380.5696h-122.2144v57.4464h56.32v336.7936h125.0304z m502.3744-417.3312a534.272 534.272 0 0 0-6.5024-24.5248l-7.3216-25.344a613.0688 613.0688 0 0 0-7.2704-23.6544 355.5328 355.5328 0 0 0-7.0656-19.4048H2109.952c4.5056 12.3904 9.1136 27.136 13.824 44.2368 4.6592 17.0496 8.4992 33.28 11.52 48.6912h63.0784z m268.6464 259.6864v-94.1056h106.4448V469.5552h-106.4448V338.8928h110.3872V284.2624h-324.9664v54.6304h153.7536v278.272m-74.3424-2.5088v-204.8h-59.6992v204.8m-39.424 159.5904v-54.0672h-46.1824V380.5696h-108.6976v50.688h46.7456v342.9888h108.1344z"
+                                    fill="#3F2D1A" p-id="5467"></path>
+                                <path
+                                    d="M2658.048 450.4576l62.0032 62.976-341.0944 346.624-15.8208-16.0256v0.0512l-155.0848-157.5424 62.0544-62.976 108.7488 110.4896 279.1936-283.5968z"
+                                    fill="#F08B39" p-id="5468"></path>
+                            </svg></p>
+                    </div>
+                </div>
+            </div>
+            <div id="dialogue_contain" class="dialogue-contain">
+                <p class="dialogue-service-contain"><span
+                        class="dialogue-text dialogue-service-text">您好，您有什么问题吗？以下是一些常见问题选项：</span></p>
+
+                <p class="dialogue-service-contain">
+                    <span class="dialogue-text dialogue-service-text">
+                        1. 产品信息请回复 A；
+                        <br>2.订单状态请回复 B；
+                        <br>3.售后服务请回复C。</span>
+                </p>
+
+            </div>
+            <div class="dialogue-submit">
+                <p id="dialogue_hint" class="dialogue-hint"><span class="dialogue-hint-icon">!</span><span
+                        class="dialogue-hint-text">发送内容不能为空</span></p>
+                <textarea id="dialogue_input" class="dialogue-input-text"
+                    placeholder="请输入(Enter提交,shift+Enter换行)"></textarea>
+            </div>
+        </div>
+    </div>
+    <!-- 脚注 -->
+    <footer id="footer" class="footer">
+        <div class="footer_width">
+            <ol class="fl2 foot1">
+                <li>
+                    <i class="iconfont icon-icon"></i>
+                    <span>正品保障</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-youxuan-quanqiuzhicai"></i>
+                    <span>全球直采</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-service-wuyoutuihuanhuo"></i>
+                    <span>无忧退换</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-baohu"></i>
+                    <span>值得信赖</span>
+                </li>
+            </ol>
+            <div style="border-top: 1px solid #ebebeb;margin-bottom: 15px;"></div>
+            <div class="fl">
+                <dl class="foot2">
+                    <dt>服务保障</dt>
+                    <dd>1.正品保证</dd>
+                    <dd>2.7天无理由放心退</dd>
+                    <dd>3.24小时客户在线服务</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>支付方式</dt>
+                    <dd>1.支付宝支付</dd>
+                    <dd>2.微信支付</dd>
+                    <dd>3.qq支付</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>配送方式</dt>
+                    <dd>1.配送范围:仅中国内陆</dd>
+                    <dd>2.运费：全场包邮</dd>
+                </dl>
+                <dl class="foot2">
+                    <dt>售后服务</dt>
+                    <dd>1.退货政策：七天无理由退货（仅部分商品包邮，其它由客户自行承担）</dd>
+                    <dd>2.退货方式：联系客服后回寄商品&nbsp;&nbsp;&nbsp;退款方式：原支付方式退回</dd>
+                    <dd>3.时效：回寄商品后货到退款</dd>
+                </dl>
+            </div>
+            <p class="foot3">
+                <a href="">关于我们</a>&nbsp;|
+                <a href="">品牌招商</a>&nbsp;|
+                <a href="">平台规则</a>&nbsp;|
+                <a href="">隐私条款</a>&nbsp;|
+                <a href="">服务条款</a>
+            <p>
+
+            <p style="padding-top: 10px;">
+                <span>QQ: 3491025882</span>
+                <span>邮箱: 3491025882@qq.com</span>
+                <span>全国服务热线：400-643-2548</span>
+                <br>
+                使用本网站即表示接受用户协议版权所有臻品有限公司粤公网安备 440103023331号
+                &nbsp;&nbsp;粤ICP备08114786号经营许可证：粤B2-20170777
+                违法和不良信息举报电话：4006789888&nbsp;算法推荐违规举报电话：4006789888
+            </p>
+            <div style="float: left;">
+                <a href="https://www.12315.cn/?spm=608.20767294.a2226n1.89.26221aa3XjCKMv"><img
+                        src="./image/foot_img/1.png" alt="" style="height: 40px;width: auto;"></a>
+                <a href="https://jbts.mct.gov.cn/?spm=608.20767294.a2226n1.88.26221aa3XjCKMv"><img
+                        src="./image/foot_img/2.png" alt="" style="height: 40px;width: auto;"></a>
+                <a href="https://www.zjjubao.com/?spm=608.20767294.a2226n1.90.26221aa3XjCKMv"><img
+                        src="./image/foot_img/3.png" alt="" style="height: 40px;width: auto;"></a>
+            </div>
+        </div>
+    </footer>
+    >
+
+
+    <script>
+        window.onload = function () {
+            var aData = [{
+                "imgUrl": "./image/sptuijian/马克笔.png",
+                "proName": "KOKUYO国誉Campus淡彩色系双头荧光笔浅色马克笔手账记号笔手帐笔重点荧光标记笔学生用记号笔",
+                "html": "./guoyu_xq.html",
+                "probaoyou": "退货包邮",
+                "proPrice": "29",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/JBL耳机.png",
+                "proName": "JBL T310C入耳式有线耳机线控手机耳塞男女耳麦重低音",
+                "html": "./JBL_xq.html",
+                "probaoyou": "爆款热卖",
+                "proPrice": "129",
+                "proComm": "9.7",
+            }, {
+                "imgUrl": "./image/sptuijian_2/布朗饼干.png",
+                "proName": "布朗尼脆片坚果夹心薄脆饼干早餐代餐休闲小吃食品儿童小零食",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "15",
+                "proComm": "4.6",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/棉花.png",
+                "proName": "瑞派滋夹心棉花糖香甜软绵水果夹心软糖休闲办公解馋美味糖果零食10包5元",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "5",
+                "proComm": "3.6",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/比比赞饼干.png",
+                "proName": "比比赞黑糖咸蛋黄麦芽夹心饼干单独小包装小零食小吃散装休闲食品",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "8",
+                "proComm": "2.6",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/a字裙.png",
+                "proName": " 卡其色百褶裙女秋冬2024新款高腰显瘦毛呢jk短裙小个子a字半身裙",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "32",
+                "proComm": "4.2",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/至禾.png",
+                "proName": "至禾Wonderland 松烟苏木 国风女装2024新款新中式复古两件套装裙",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "266",
+                "proComm": "1.2",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/大衣.png",
+                "proName": "XinmonLee今年流行中长款毛呢外套女士秋冬季新款加厚高级感大衣",
+                "html": "",
+                "probaoyou": "爆款热卖",
+                "proPrice": "216",
+                "proComm": "1.3",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/连帽卫衣.png",
+                "proName": "重磅连帽卫衣男春秋款2024新款宽松潮牌美式男士加绒外套冬季上衣",
+                "html": "",
+                "probaoyou": "爆款热卖",
+                "proPrice": "43",
+                "proComm": "1.2",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/破洞.png",
+                "proName": "初秋破洞牛仔外套男春秋款潮牌高级感痞帅宽松美式夹克复古上衣服",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "60",
+                "proComm": "2.1",
+            },
+            {
+                "imgUrl": "./image/sptuijian/乔丹女运动鞋.png",
+                "proName": "乔丹女鞋女运动鞋网面透气2024夏季新款时尚老爹鞋鞋子女款",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "149",
+                "proComm": "8.6",
+            },
+            {
+                "imgUrl": "./image/sptuijian/女士板鞋.png",
+                "proName": "厚底增高小白鞋女2024新款爆款百搭休闲板鞋女款透气运动鞋子女生",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "60",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/彩铅.png",
+                "proName": "CARAN DACHE瑞士卡达 6901单支补色油性彩色铅笔100色手绘彩铅",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "39",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/洗面奶.png",
+                "proName": "半亩花田氨基酸慕斯洗面奶洁面温和深层清洁旗舰店官方正品",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "29",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/牛角包.png",
+                "proName": "Bimbo宾堡 多菲角爆浆牛角包巧克力可可抹茶牛乳口味囤货12包装",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "47",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/vivo手机.png",
+                "proName": "【百亿补贴】vivo Y100t新品5G手机120W闪充天玑8200旗舰芯片大内存大电池长续航vivo官方旗舰店",
+                "html": "",
+                "probaoyou": "爆款热卖",
+                "proPrice": "1699",
+                "proComm": "2.3",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/x50手机壳.png",
+                "proName": "适用 荣耀x50手机壳 荣耀x50gt手机壳 华为新款全包防摔保护套x50i磨砂高端高级感后外壳男女后盖honor曲面屏",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "19",
+                "proComm": "2.8",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/乌萨奇手机壳.png",
+                "proName": "乌萨奇手机壳16适用chiikawa苹果15promax小八iphone14plus吉伊卡哇13Pro飞鼠12公仔11女xr镂空xs彩银max情侣",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "13",
+                "proComm": "1.5",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/华为P70.png",
+                "proName": "【顺丰闪发 12期分期】华为HUAWEI Pura 70新款官方正品授权店P70系列旗舰手机新品全网通拍照",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "4499",
+                "proComm": "2.8",
+            },
+            {
+                "imgUrl": "./image/sptuijian/耳机.png",
+                "proName": "漫步者入耳式真无线蓝牙耳机游戏电竞运动防水通话降噪迷你X3 AIR",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "29",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/联想1.jpg",
+                "proName": "联想 笔记本电脑S15游戏办公轻薄商务笔记本15.6英寸 指纹解锁 100%sRGB高色域 ",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "3699",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/联想2.jpg",
+                "proName": "联想 笔记本电脑S15游戏办公轻薄商务笔记本15.6英寸 指纹解锁 100%sRGB高色域 ",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "2999",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/营养快线.png",
+                "proName": "娃哈哈营养快线500g*15瓶原味椰子味酸奶儿童含乳早餐饮料品",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "60",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/薯条.jpg",
+                "proName": "奇多玉米棒粟米棒薯条网红儿童怀旧解馋膨化小零食休闲食品小吃货",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "4",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/薯片.jpg",
+                "proName": "乐事原切薯片零食办公室小吃40g*10休闲零食大礼包送女友零食",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "12",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/螺蛳粉.png",
+                "proName": "螺状元柳州正宗螺蛳粉310g*10袋速食酸辣螺狮粉米线螺丝粉大礼盒",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "40",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/裙套装.png",
+                "proName": "一颗小野莓法式显瘦气质长裙加灰色防晒衫连衣裙女装夏季新款套装裙子",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "59",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/谷雨.png",
+                "proName": "谷雨白千松露水乳套装敏感肌修护补水保湿油皮控油祛痘国货护肤品",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "68",
+                "proComm": "9.7",
+            },
+
+            {
+                "imgUrl": "./image/sptuijian/奥利奥.png",
+                "proName": "【包邮】奥利奥夹心饼干经典原味582g*2休闲零食早餐儿童网红夏季",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "32",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/唐狮T恤.png",
+                "proName": "唐狮集团DESSO短袖t恤男生夏季2024新款美式重磅纯棉五分半袖体恤",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "35",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/鸡爪.png",
+                "proName": "王小卤无骨鸡爪500g/罐蒜香柠檬酸辣脱骨去骨凤爪",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "54",
+                "proComm": "9.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian/笔袋.png",
+                "proName": "卡皮巴拉解压笔袋大容量高颜值熊猫文具盒2024新款一年级的男孩女孩版小学生初中女生文具袋铅笔盒ins风笔盒",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "54",
+                "proComm": "10",
+            }, {
+                "imgUrl": "./image/sptuijian_2/力士.png",
+                "proName": "果仁花生夹心巧克力加能量棒士力长条零食批发喜糖年货节糖果整箱",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "15",
+                "proComm": "4.3",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/双汇.png",
+                "proName": "双汇火腿肠香肠玉米泡面搭档即食香辣香脆烤肠热狗零食旗舰店整箱",
+                "html": "",
+                "probaoyou": "爆款热卖",
+                "proPrice": "13",
+                "proComm": "6.9",
+            },
+
+            {
+                "imgUrl": "./image/sptuijian_2/素毛肚.png",
+                "proName": "缺牙齿香辣素毛肚魔芋丝30包整盒湖南特产超辣素牛肚麻辣休闲零食",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "15",
+                "proComm": "1.9",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/莲子.png",
+                "proName": "甄磨坊莲子脆开袋即食去芯无芯香酥莲子脆脱水蔬菜干休闲小零食",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "18",
+                "proComm": "4.6",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/蔓越.png",
+                "proName": "蔓越莓雪花酥零食芝士牛奶咸蛋黄多口味奶芙牛轧糖果休闲糕点小吃200g1盒",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "20",
+                "proComm": "4.8",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/蛋.png",
+                "proName": "杨生记日式溏心蛋鸡蛋即食糖心蛋卤蛋整箱卤味零食充饥速食品早餐",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "12",
+                "proComm": "5.1",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/豆豆牛乳糖.png",
+                "proName": "豆豆山姆代购新年婚礼甜零食喜糖果Member'sMark扁桃仁牛轧糖480g",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "11",
+                "proComm": "2.9",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/贡菜魔芋爽.png",
+                "proName": "馋小赖魔芋贡菜爽脆开袋即食追剧下饭菜网红小零食香辣解馋20包6元",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "6",
+                "proComm": "9.9",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/跳跳棒棒糖.png",
+                "proName": "跳跳棒棒糖网红糖果奶棒糖儿童解馋休闲小零食奖励学生喜糖奶片糖30袋",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "8",
+                "proComm": "5.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/辣条.png",
+                "proName": "辣条大面筋40克辣味零食8090怀旧网红麻辣休闲零食大礼包便宜辣片",
+                "html": "",
+                "probaoyou": "爆款热卖",
+                "proPrice": "4",
+                "proComm": "6.4",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/鸡蛋卷.png",
+                "proName": "盐津铺子椰子味蛋卷酥鸡蛋卷饼干办公室小吃零食休闲食品独立包装40包",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "15",
+                "proComm": "5.2",
+            },
+            {
+                "imgUrl": "./image/sptuijian_2/鸭舌.png",
+                "proName": "味滋源鸭舌头温州特产辣味零食肉即食网红休闲食品小吃卤味大礼包30包",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "19",
+                "proComm": "6.8",
+            }, {
+                "imgUrl": "./image/sptuijian_3/OPPO手机.png",
+                "proName": "【官网】OPPO Reno12 超美小直屏天玑 8250 星速版旗舰芯片正品学生智能拍照AI手机oppo官方旗舰店",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "2299",
+                "proComm": "1.8",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/华为手机.png",
+                "proName": "【优惠400元】华为nova 12活力版6.88mm超薄潮美直屏前置6000万超广角拍照官方旗舰店鸿蒙智能手机学生优惠",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "2099",
+                "proComm": "6.2",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/小米手机.png",
+                "proName": "【跳转直播间购机更优惠】Redmi K70红米手机小米手机官方旗舰店红米k70小米k70高通骁龙8Gen2澎湃OS",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "2599",
+                "proComm": "5.4",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/带挂绳手机壳.png",
+                "proName": "适用苹果14手机壳iphone14ProMax新款保护套Pro Max十四硅胶全包防摔pm男ip女pmax网红ipohen钢化膜por带挂绳",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "10",
+                "proComm": "5.1",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/悟空.png",
+                "proName": " 【黑神话悟空】Lenovo/联想拯救者R9000P独显8G专业P图设计电竞游戏笔记本电脑R7000P新款GeeKProG5000",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "6499",
+                "proComm": "2.1",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/拯救者1647.png",
+                "proName": "lenovo联想拯救者Y7000P/R7000P二手笔记本电脑95新游戏本独显i7 ",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "1647",
+                "proComm": "1.1",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/曲面屏x50手机壳.png",
+                "proName": "适用荣耀x50手机壳新款华为x50pro专用gt磨砂x50i全包防摔的保护套honor高端高级感男女叉五零女士网红曲面屏20",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "16",
+                "proComm": "2.3",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/联想键鼠套.png",
+                "proName": "联想来酷无线键盘鼠标键鼠套装台式电脑笔记本办公游戏通用KW201",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "58",
+                "proComm": "1.1",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/联想鼠标.png",
+                "proName": "联想Handle无线静音鼠标无声办公笔记本台式机电脑鼠标风暴灰男女",
+                "html": "",
+                "probaoyou": "爆款热卖",
+                "proPrice": "39",
+                "proComm": "2.4",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/苹果手机.png",
+                "proName": "Apple/苹果 iPhone 13 手机全网通国行官方正品拍照游戏支持移动联通电信5G双卡双待苹果13手机官网旗舰直降",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "3138",
+                "proComm": "2.7",
+            },
+            {
+                "imgUrl": "./image/sptuijian_3/苹果手机壳.png",
+                "proName": "CASETiFY 森林早报系列 梦幻小屋 适用于iPhone16ProMax/16Pro/15ProMax/14ProMax手机壳",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "439",
+                "proComm": "0.1",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/贝西妮.png",
+                "proName": "贝茜妮法式复古设计感长袖衬衫女2024秋季新款高级感衬衣宽松上衣",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "269",
+                "proComm": "2.3",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/真维斯.png",
+                "proName": "真维斯夹克男春秋季潮流翻领休闲外套宽松百搭痞帅设计感上衣男款",
+                "html": "",
+                "probaoyou": "爆款热卖",
+                "proPrice": "88",
+                "proComm": "1.4",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/卫衣外套.png",
+                "proName": "春秋季宽松大码美式重磅打底衫男生休闲加绒加厚冬款圆领卫衣外套",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "79",
+                "proComm": "2.3",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/夹克.png",
+                "proName": "初秋季小香风外套男士复古美式潮流格子衬衫痞帅宽松休闲工装夹克",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "48",
+                "proComm": "3.1",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/棒球服.png",
+                "proName": "INSstudios 国潮牌情侣美式拼皮刺绣小香风棒球服宽松夹克外套男女",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "129",
+                "proComm": "1.5",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/韩语琳.png",
+                "proName": "韩语琳长袖衬衫女2024年新款洋气时尚设计感小众春季款高级感上衣",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "54",
+                "proComm": "",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/黑色连衣裙.png",
+                "proName": "法式黑色长袖连衣裙子女秋季2024新款小个子一整套早初秋韩系穿搭",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "99",
+                "proComm": "1.3",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/樱花粉.png",
+                "proName": "娅可家樱花粉缎面衬衫女春秋职业通勤长袖衬衣高级感正装面试上衣",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "158",
+                "proComm": "2.9",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/假两件.png",
+                "proName": "假两件旗袍针织连衣裙子女修身气质设计感打底内搭鱼尾长裙早秋季 ",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "86",
+                "proComm": "6.1",
+            },
+            {
+                "imgUrl": "./image/sptuijian_4/女士运动鞋.png",
+                "proName": "椰椰海盐骆驼奶油老爹鞋运动鞋女2024新款厚底女鞋休闲鞋男女鞋子",
+                "html": "",
+                "probaoyou": "退货包邮",
+                "proPrice": "99",
+                "proComm": "1.2",
+            }
+
+
+            ];
+            var oBox = document.getElementById("box");
+            var oCar = document.getElementById("car");
+            var oUl = document.getElementsByTagName("ul")[0];
+
+
+            // 搜索框
+            const input = document.querySelector('.t_name');
+            const button = document.querySelector('.ok');
+            const box = document.getElementById('box');
+            const listItems = box.getElementsByTagName('li');
+
+            button.addEventListener('click', () => {
+                const keyword = input.value;
+                for (let i = 0; i < listItems.length; i++) {
+                    if (listItems[i].innerHTML.includes(keyword)) {
+                        listItems[i].style.display = 'block';
+                    } else {
+                        listItems[i].style.display = 'none';
+                    }
+                }
+
+                if (!Array.from(listItems).some(item => item.innerHTML.includes(keyword))) {
+                    alert('没有相关商品');
+                }
+            });
+            // 
+            console.log(aData);
+
+            for (var i = 0; i < aData.length; i++) {
+                var oLi = document.createElement("li");
+                var data = aData[i];
+
+                oLi.innerHTML += '<div class="pro_img"><img src="' + data["imgUrl"] + '" width="auto" height="250"></div>';
+                oLi.innerHTML += '<p class="pro_name"><a rel="nofollow" href="' + data["html"] + '">' + data["proName"] + '</a></p>';
+                oLi.innerHTML += '<span class="pro_red">' + data["probaoyou"] + '</span>' + '<span class="pro_price">' + '¥' + data["proPrice"] + '元</p>' + '</span>';
+                oLi.innerHTML += '<span class="pro_rank">' + data["proComm"] + '万人好评</span>' + '<div class="add_btn">加入购物车</div>';
+                oUl.appendChild(oLi);
+            }
+
+            var aBtn = getClass(oBox, "add_btn");//获取box下的所有添加购物车按钮
+            var number = 0;//初始化商品数量
+            for (var i = 0; i < aBtn.length; i++) {
+                number++;
+                aBtn[i].index = i;
+                aBtn[i].onclick = function () {
+                    var oDiv = document.createElement("div");
+                    var data = aData[this.index];  //根据当前点击按钮的索引获取对应的商品数据
+                    oDiv.className = "row hid";//接着使用字符串拼接的方式为 
+                    oDiv.innerHTML += '<div class="check left"> <i class="i_check" id="i_check" onclick="i_check()" >√</i></div>';
+                    oDiv.innerHTML += '<div class="img left"><img src="' + data["imgUrl"] + '" width="80" height="80"></div>';
+                    oDiv.innerHTML += '<div class="name left"><span>' + data["proName"] + '</span></div>';
+                    oDiv.innerHTML += '<div class="price left"><span>' + data["proPrice"] + '元</span></div>';
+                    oDiv.innerHTML += ' <div class="item_count_i"><div class="num_count"><div class="count_d">-</div><div class="c_num">1</div><div class="count_i">+</div></div> </div>'
+                    oDiv.innerHTML += '<div class="subtotal left"><span>' + data["proPrice"] + '元</span></div>'
+                    oDiv.innerHTML += '<div class="ctrl left"><a rel="nofollow" href="javascript:;">×</a></div>';
+
+
+                    // 购物车
+                    oCar.appendChild(oDiv);
+                    var flag = true;
+                    var check = oDiv.firstChild.getElementsByTagName("i")[0];
+                    check.onclick = function () {
+                        // console.log(check.className);
+                        if (check.className == "i_check i_acity") {
+                            check.classList.remove("i_acity");
+
+                        } else {
+                            check.classList.add("i_acity");
+                        }
+                        getAmount();
+                    }
+                    var delBtn = oDiv.lastChild.getElementsByTagName("a")[0];
+                    delBtn.onclick = function () {
+                        var result = confirm("确定删除吗?");
+                        if (result) {
+                            oCar.removeChild(oDiv);
+                            number--;
+                            getAmount();
+                        }
+                    }
+                    var i_btn = document.getElementsByClassName("count_i");
+                    for (var k = 0; k < i_btn.length; k++) {
+                        i_btn[k].onclick = function () {
+                            bt = this;
+                            //获取小计节点
+                            at = this.parentElement.parentElement.nextElementSibling;
+                            //获取单价节点
+                            pt = this.parentElement.parentElement.previousElementSibling;
+                            //获取数量值
+                            node = bt.parentNode.childNodes[1];
+                            console.log(node);
+                            num = node.innerText;
+                            num = parseInt(num);
+                            num++;
+                            node.innerText = num;
+                            //获取单价
+                            price = pt.innerText;
+                            price = price.substring(0, price.length - 1);
+                            //计算小计值
+                            at.innerText = price * num + "元";
+                            //计算总计值
+                            getAmount();
+                        }
+                    }
+                    //获取所有的数量减号按钮
+                    var d_btn = document.getElementsByClassName("count_d");
+                    for (k = 0; k < i_btn.length; k++) {
+                        d_btn[k].onclick = function () {
+                            bt = this;
+                            //获取小计节点
+                            at = this.parentElement.parentElement.nextElementSibling;
+                            //获取单价节点
+                            pt = this.parentElement.parentElement.previousElementSibling;
+                            //获取c_num节点
+                            node = bt.parentNode.childNodes[1];
+                            num = node.innerText;
+                            num = parseInt(num);
+                            if (num > 1) {
+                                num--;
+                            }
+                            node.innerText = num;
+                            //获取单价
+                            price = pt.innerText;
+                            price = price.substring(0, price.length - 1);
+                            //计算小计值		
+                            at.innerText = price * num + "元";
+                            //计算总计值
+                            getAmount();
+                        }
+                    }
+
+                    delBtn.onclick = function () {
+                        var result = confirm("确定删除吗?");
+                        if (result) {
+                            oCar.removeChild(oDiv);
+                            number--;
+                            getAmount();
+                        }
+                    }
+
+                }
+            }
+
+        }
+        function getClass(oBox, tagname) {
+            var aTag = oBox.getElementsByTagName("*");
+            var aBox = [];
+            for (var i = 0; i < aTag.length; i++) {
+                if (aTag[i].className == tagname) {
+                    aBox.push(aTag[i]);
+                }
+            }
+            return aBox;
+        }
+        var index = false;
+        function checkAll() {
+            var choose = document.getElementById("car").getElementsByTagName("i");
+            // console.log(choose);
+            if (choose.length != 1) {
+                for (i = 1; i < choose.length; i++) {
+                    if (!index) {
+                        choose[0].classList.add("i_acity2")
+                        choose[i].classList.add("i_acity");
+                    } else {
+                        choose[i].classList.remove("i_acity");
+                        choose[0].classList.remove("i_acity2")
+                    }
+                }
+                index = !index;
+            }
+            getAmount();
+        }
+
+
+        //进行价格合计
+        function getAmount() {
+            ns = document.getElementsByClassName("i_acity");
+            sum = 0;
+            document.getElementById("price_num").innerText = sum;
+            for (y = 0; y < ns.length; y++) {
+                amount_info = ns[y].parentElement.parentElement.lastElementChild.previousElementSibling;
+                let numText = amount_info.innerText;
+                console.log("待转换的文本：", numText);  // 输出待转换的文本用于调试
+                let num = parseInt(numText);
+                if (isNaN(num)) {  // 检查是否转换成功
+                    console.error("转换失败，文本：" + numText);  // 输出错误信息
+                    continue;  // 转换失败则跳过本次循环
+                }
+                sum += num;
+                document.getElementById("price_num").innerText = sum;
+            }
+        }
+
+
+        // 获取去结算按钮元素
+        const payButton = document.getElementById('pay');
+        // 为按钮添加点击事件，跳转到指定页面
+        payButton.addEventListener('click', function () {
+            window.location.href = 'zhifu.html';
+        });
+
+
+    </script>
+    <script src="./js/lunbo.js"></script>
+    <!-- 右侧栏上下 -->
+    <script src="./js/right_topb.js"></script>
+    <!-- 左侧栏 -->
+    <script src="./js/cebianlan.js"></script>
+    <script src="./js/kefu.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('query');
+            if (query) {
+                // 在这里进行搜索相关的操作，比如根据 query 值在页面中显示搜索结果等
+                console.log('搜索关键词:', query);
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

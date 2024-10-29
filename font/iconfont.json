@@ -1,0 +1,135 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "687391",
+      "name": "其他",
+      "font_class": "qita",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    },
+    {
+      "icon_id": "830341",
+      "name": "100%正品",
+      "font_class": "icon",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "1029274",
+      "name": "右右",
+      "font_class": "right-1-copy",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "1048425",
+      "name": "鞋包配饰类目",
+      "font_class": "xiebaopeishileimu",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "1229074",
+      "name": "食品",
+      "font_class": "shipin",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "2932839",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e801",
+      "unicode_decimal": 59393
+    },
+    {
+      "icon_id": "3019521",
+      "name": "值得信赖",
+      "font_class": "zhidexinlai",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "5876343",
+      "name": "反馈",
+      "font_class": "fankui",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "7090030",
+      "name": "登录",
+      "font_class": "denglu",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    },
+    {
+      "icon_id": "7090090",
+      "name": "注册",
+      "font_class": "zhuce",
+      "unicode": "e71c",
+      "unicode_decimal": 59164
+    },
+    {
+      "icon_id": "7587949",
+      "name": "上",
+      "font_class": "shang",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "7587971",
+      "name": "下",
+      "font_class": "xia",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "13986807",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e572",
+      "unicode_decimal": 58738
+    },
+    {
+      "icon_id": "18166528",
+      "name": "衣服,服装",
+      "font_class": "clothes",
+      "unicode": "e8c7",
+      "unicode_decimal": 59591
+    },
+    {
+      "icon_id": "20815429",
+      "name": "class数码维修",
+      "font_class": "classshumaweixiu",
+      "unicode": "e7f5",
+      "unicode_decimal": 59381
+    },
+    {
+      "icon_id": "26488850",
+      "name": "优选-全球直采",
+      "font_class": "youxuan-quanqiuzhicai",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "32175064",
+      "name": "service-无忧退换货",
+      "font_class": "service-wuyoutuihuanhuo",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "35346330",
+      "name": "保险保障",
+      "font_class": "baohu",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    }
+  ]
+}

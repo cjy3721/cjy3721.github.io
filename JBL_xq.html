@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="order by dede58.com" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/xiangqing.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./font/iconfont.css">
+	<link rel="shortcut icon" href="./image/logo/logo2.png" type="image/x-icon" />
+</head>
+
+<body>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const urlParams = new URLSearchParams(window.location.search);
+			const query = urlParams.get('query');
+			if (query) {
+				// 在这里进行搜索相关的操作，比如根据 query 值在页面中显示搜索结果等
+				console.log('搜索关键词:', query);
+			}
+		});
+	</script>
+	</head>
+
+
+	<div style="background-color:#f8f9fa;height: 30px;">
+		<div class="container fl head">
+			<div class="head1">欢迎来到臻品购物城！
+				<script>
+					var arrWeekDay = new Array("星期日", "星期一", "星期二", "星期三", "星期四",
+						"星期五", "星期六", "星期日");
+					var today;
+					today = new Date();
+					document.write("现在是北京时间：" + today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 " + arrWeekDay[today.getDay()]);
+				</script>
+			</div>
+			<div>
+				<ol class="fl head2">
+					<li style="margin-right:10px;">
+						<a href="./kefu.html" id="loginLink">
+							<i class="iconfont icon-kefu"></i>
+							<span class="text">联系客服</span>
+						</a>
+					</li>
+					<li style="margin-right:10px;">
+						<a href="./fankui.html" id="loginLink">
+							<i class="iconfont icon-fankui"></i>
+							<span class="text">意见反馈</span>
+						</a>
+					</li>
+					<li style="margin-right:10px;">
+						<a href="./index.html">
+							<i class="iconfont icon-denglu"></i>
+							<span class="text">退出登录</span>
+						</a>
+					</li>
+					<li style="margin-right:10px;">
+						<a href="./gerenzhongxin.html">
+							<i class="iconfont icon-zhuce"></i>
+							<span class="text">个人中心</span>
+						</a>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<div style="background-color: white;">
+		<div class="fl2 part1 ">
+			<div>
+				<a href="./index2.html"><img src="./image/logo/logo.png" alt=""
+						style="width: 300px;height: 90px;overflow: hidden;"></a>
+			</div>
+			<div>
+				<div class="search">
+					<input type="text" name="" value="" class="t_name">
+					<button class="ok">确定</button>
+				</div>
+				<ol style="display: flex;justify-content: left;">
+					<li class="tag">超值优惠</li>
+					<li class="tag">联想笔记本</li>
+					<li class="tag">华为手机</li>
+					<li class="tag">玛丽珍皮鞋</li>
+					<li class="tag">男士体恤</li>
+				</ol>
+			</div>
+			<div style="font-weight: bold;">
+				<span style="margin-right: 5px;">100%正品 </span>
+				<span style="margin-right: 5px;">7天放心退</span>
+				<span>9.9包邮</span>
+
+			</div>
+		</div>
+
+		<div style="height: 15px;"></div>
+		<!-- xiangqing -->
+		<form action="post" method="">
+			<div class="xiangqing">
+				<div class="neirong ">
+					<div class="xiaomi6 ">JBL耳机</div>
+					<nav>
+						<li><a href="">概述</a></li>
+						<li>|</li>
+						<li><a href="">图片详情</a></li>
+						<li>|</li>
+						<li><a href="">参数</a></li>
+						<li>|</li>
+						<li><a href="">用户评价</a></li>
+						<div class="clear"></div>
+					</nav>
+				</div>
+			</div>
+			<style>
+				#container_xqimg {
+					position: relative;
+				}
+
+				#mirror {
+					width: 160px;
+					height: 160px;
+					border: 2px solid #f8f9fa;
+					border-radius: 80px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					overflow: hidden;
+					pointer-events: none;
+				}
+
+				#mirror img {
+					position: absolute;
+				}
+			</style>
+
+			<div class="jieshao mt20 w">
+				<div class="left float" style="position: relative;">
+					<div class="small-img" style="width: 100px;height: 100px;float: left;overflow: hidden;">
+						<img src="./image/sptuijian/JBL耳机.png" alt=""
+							style="width: 100px;height: auto;margin-bottom: 10px;">
+					</div>
+					<div class="small-img"
+						style="width: 100px;height: 100px;float: left;overflow: hidden;float: left;position: absolute;top: 120px;left: 10px;">
+						<img src="./image/JBL_xq/2.jpg" alt="" style="width: 100px;height: auto;margin-bottom: 10px;">
+					</div>
+
+					<div class="small-img"
+						style="width: 100px;height: 100px;float: left;overflow: hidden;float: left;position: absolute;top: 230px;left: 10px;">
+						<img src="./image/JBL_xq/1.jpg" alt="" style="width: 100px;height: auto;margin-bottom: 10px;">
+					</div>
+
+					<div class="small-img"
+						style="width: 100px;height: 100px;float: left;overflow: hidden;float: left;position: absolute;top: 340px;left: 10px;">
+						<img src="./image/JBL_xq/3.webp" alt="" style="width: 100px;height: auto;margin-bottom: 10px;">
+					</div>
+
+					<div id="container_xqimg" style="width: 440px;height: 440px;float: right;overflow: hidden;">
+						<img id="mainImg" src="./image/sptuijian/JBL耳机.png" style="width: 440px;height: auto;">
+						<div id="mirror">
+							<img src="./image/sptuijian/JBL耳机.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="right fr" style="padding: 10px;">
+					<div class="jianjie ">JBL T310C入耳式有线耳机线控手机耳塞男女耳麦重低音(已售 2000+)</div>
+					<div class="jiage mt10">价格¥129元</div>
+					<div class="ft20  mt10" style="font-size: 14px;">选择版本:</div>
+					<div class="xzbb  mt10">
+						<div class=" float  version-option">
+							<a><span class="fenlei">普通版</span></a>
+
+						</div>
+						<div class=" fr  version-option">
+							<a><span class="fenlei">防水版</span></a>
+
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="ft20  mt10" style="font-size: 14px;">选择颜色:</div>
+					<div class="xzbb mt10">
+						<div class=" float  color-option">
+							<a><span class="fenlei">黑色 </span></a>
+
+						</div>
+
+						<div class=" fr  color-option">
+							<a> <span class="fenlei">白色</span></a>
+
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="shuliang mt20">数量： <button id="minus" type="button">-</button>
+						<span id="quantity">1</span>
+						<button id="plus" type="button">+</button>
+					</div>
+
+					<div class="zongji mt10">总价：¥<span id="totalPrice">0</span></div>
+
+
+					<div class="xiadan mt20">
+						<button id="zhifu" class="jrgwc" type="button">立即选购</button>
+						<button id="fr" class="jrgwc" type="button">加入购物车</button>
+						<div id="payment-modal" class="payment-modal">
+							<img src="./image/zhifu/支付宝.png" alt="支付方式 1">
+							<img src="./image/zhifu/微信.png" alt="支付方式 2">
+							<img src="./image/zhifu/qq.png" alt="支付方式 3"><br>
+							<button class="confirm-pay" type="button">确认支付</button>
+							<span class="close-modal"
+								style="cursor: pointer; position: absolute; top: 5px; right: 5px;font-size: 16px;">×
+							</span>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</form>
+		<!-- footer -->
+		<footer id="footer" class="footer">
+			<div class="footer_width">
+				<ol class="fl2 foot1">
+					<li>
+						<i class="iconfont icon-icon"></i>
+						<span>正品保障</span>
+					</li>
+					<li>
+						<i class="iconfont icon-youxuan-quanqiuzhicai"></i>
+						<span>全球直采</span>
+					</li>
+					<li>
+						<i class="iconfont icon-service-wuyoutuihuanhuo"></i>
+						<span>无忧退换</span>
+					</li>
+					<li>
+						<i class="iconfont icon-baohu"></i>
+						<span>值得信赖</span>
+					</li>
+				</ol>
+				<div style="border-top: 1px solid #ebebeb;margin-bottom: 15px;"></div>
+				<div class="fl">
+					<dl class="foot2">
+						<dt>服务保障</dt>
+						<dd>1.正品保证</dd>
+						<dd>2.7天无理由放心退</dd>
+						<dd>3.24小时客户在线服务</dd>
+					</dl>
+					<dl class="foot2">
+						<dt>支付方式</dt>
+						<dd>1.支付宝支付</dd>
+						<dd>2.微信支付</dd>
+						<dd>3.qq支付</dd>
+					</dl>
+					<dl class="foot2">
+						<dt>配送方式</dt>
+						<dd>1.配送范围:仅中国内陆</dd>
+						<dd>2.运费：全场包邮</dd>
+					</dl>
+					<dl class="foot2">
+						<dt>售后服务</dt>
+						<dd>1.退货政策：七天无理由退货（仅部分商品包邮，其它由客户自行承担）</dd>
+						<dd>2.退货方式：联系客服后回寄商品&nbsp;&nbsp;&nbsp;退款方式：原支付方式退回</dd>
+						<dd>3.时效：回寄商品后货到退款</dd>
+					</dl>
+				</div>
+				<p class="foot3">
+					<a href="">关于我们</a>&nbsp;|
+					<a href="">品牌招商</a>&nbsp;|
+					<a href="">平台规则</a>&nbsp;|
+					<a href="">隐私条款</a>&nbsp;|
+					<a href="">服务条款</a>
+				<p>
+
+				<p style="padding-top: 10px;">
+					<span>QQ: 3491025882</span>
+					<span>邮箱: 3491025882@qq.com</span>
+					<span>全国服务热线：400-643-2548</span>
+					<br>
+					使用本网站即表示接受用户协议版权所有臻品有限公司粤公网安备 440103023331号
+					&nbsp;&nbsp;粤ICP备08114786号经营许可证：粤B2-20170777
+					违法和不良信息举报电话：4006789888&nbsp;算法推荐违规举报电话：4006789888
+				</p>
+				<div style="float: left;">
+					<a href="https://www.12315.cn/?spm=608.20767294.a2226n1.89.26221aa3XjCKMv"><img
+							src="./image/foot_img/1.png" alt="" style="height: 40px;width: auto;"></a>
+					<a href="https://jbts.mct.gov.cn/?spm=608.20767294.a2226n1.88.26221aa3XjCKMv"><img
+							src="./image/foot_img/2.png" alt="" style="height: 40px;width: auto;"></a>
+					<a href="https://www.zjjubao.com/?spm=608.20767294.a2226n1.90.26221aa3XjCKMv"><img
+							src="./image/foot_img/3.png" alt="" style="height: 40px;width: auto;"></a>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			const container = document.querySelector("#container_xqimg");
+			const mirror = document.querySelector("#mirror");
+			const mirrorImg = document.querySelector("#mirror img");
+			const mainImg = document.querySelector("#mainImg");
+			const smallImgs = document.querySelectorAll(".small-img");
+
+			smallImgs.forEach((imgDiv, index) => {
+				imgDiv.addEventListener("click", () => {
+					mainImg.src = imgDiv.querySelector("img").src;
+					mirrorImg.src = imgDiv.querySelector("img").src;
+				});
+			});
+
+			container.addEventListener("mousemove", e => {
+				const containerRect = container.getBoundingClientRect();
+				const disLeft = e.clientX - containerRect.left - mirror.offsetWidth / 2;
+				const disTop = e.clientY - containerRect.top - mirror.offsetHeight / 2;
+
+				const maxLeft = containerRect.width - mirror.offsetWidth;
+				const maxTop = containerRect.height - mirror.offsetHeight;
+
+				const left = Math.min(maxLeft, Math.max(0, disLeft));
+				const top = Math.min(maxTop, Math.max(0, disTop));
+
+				mirror.style.left = left + "px";
+				mirror.style.top = top + "px";
+
+				const scale = 2;
+				mirrorImg.style.left = -left * scale + "px";
+				mirrorImg.style.top = -top * scale + "px";
+
+				const imgRatio = mainImg.offsetWidth / container.offsetWidth;
+				mirrorImg.style.left = -left * imgRatio * scale + "px";
+				mirrorImg.style.top = -top * imgRatio * scale + "px";
+			});
+		</script>
+		<script>
+			// 获取版本选项和颜色选项
+			const versionOptions = document.querySelectorAll('.version-option');
+			const colorOptions = document.querySelectorAll('.color-option');
+
+			// 为版本选项添加点击事件
+			versionOptions.forEach(option => {
+				option.addEventListener('click', function () {
+					// 移除所有版本选项的框选样式
+					versionOptions.forEach(v => v.classList.remove('version-frame'));
+					// 给当前点击的版本选项添加框选样式
+					this.classList.add('version-frame');
+
+					// 更新总价
+					updateTotalPrice();
+				});
+			});
+
+			// 为颜色选项添加点击事件
+			colorOptions.forEach(option => {
+				option.addEventListener('click', function () {
+					// 移除所有颜色选项的框选样式
+					colorOptions.forEach(c => c.classList.remove('color-frame'));
+					// 给当前点击的颜色选项添加框选样式
+					this.classList.add('color-frame');
+				});
+			});
+
+			// 数量加减功能
+			const quantitySpan = document.getElementById('quantity');
+			const minusButton = document.getElementById('minus');
+			const plusButton = document.getElementById('plus');
+			let quantity = 1;
+			minusButton.addEventListener('click', () => {
+				if (quantity > 1) {
+					quantity--;
+					quantitySpan.textContent = quantity;
+					updateTotalPrice();
+				}
+			});
+			plusButton.addEventListener('click', () => {
+				quantity++;
+				quantitySpan.textContent = quantity;
+				updateTotalPrice();
+			});
+
+			// 计算总价功能
+			function updateTotalPrice() {
+				const priceElement = document.querySelector('.jiage');
+				let price = parseInt(priceElement.textContent.slice(3));
+				const selectedVersion = document.querySelector('.version-frame a span');
+				if (selectedVersion.textContent === '防水版') {
+					price = 159;
+				}
+				const totalPriceSpan = document.getElementById('totalPrice');
+				totalPriceSpan.textContent = price * quantity;
+			}
+		</script>
+
+		<script>      // 支付方式
+			// 获取去结算按钮元素
+			const payButton = document.getElementById('zhifu');
+			// 为按钮添加点击事件，跳转到指定页面
+			payButton.addEventListener('click', function () {
+				window.location.href = 'zhifu.html';
+			});
+
+			//  跳转搜索 
+			document.querySelector('.ok').addEventListener('click', function () {
+				window.location.href = 'sousuo.html';
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const jiaruButton = document.getElementById('jiaru');
+				jiaruButton.addEventListener('click', function () {
+					let alertShown = false;
+					const showAlert = function () {
+						if (!alertShown) {
+							window.alert('已加入');
+							alertShown = true;
+							setTimeout(function () {
+								// 这里虽然不能直接关闭 alert，但可以通过重新加载页面或执行其他操作来模拟关闭效果
+								// 例如可以跳转到另一个页面或者刷新当前页面
+								location.reload();
+							}, 1000);
+						}
+					};
+					showAlert();
+				});
+			});
+		</script>
+</body>
+
+</html>
